@@ -5,7 +5,7 @@ import game.Game;
 import java.awt.*;
 
 /**
- * Created by Angel on 19/06/2018.
+ * Created by Angel on 19/06/2018. Changed.
  */
 
 public class Planet extends Player {
