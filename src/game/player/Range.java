@@ -3,6 +3,7 @@ package game.player;
 import game.Game;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 /**
@@ -21,19 +22,20 @@ public class Range extends Player {
     private static final int X_RECHARGE_BAR = 40;
     private static final int Y_RECHARGE_BAR = Game.HEIGHT - 50 - HEIGHT_RECHARGE_BAR;
 
+    private int speedXShoot;
+    private int speedYShoot;
     private int recharge;
     private int numberShot;
-    private int lastSpeedX;
-    private int lastSpeedY;
+
     private ArrayList<Shoot_Range> shoots;
 
     public Range(Number_of_player numPlayer, Player enemy, Game game) {
         super(HEALTH_RANGE, DAMAGE_RANGE, SPEED_RANGE, game, numPlayer, enemy, DIAMETER_RANGE);
         this.recharge = 0;
-        this.lastSpeedX = this.speed;
-        this.lastSpeedY = 0;
+        this.speedXShoot = this.speed;
+        this.speedYShoot = 0;
         if (this.numPlayer == Number_of_player.PLAYER2) {
-            this.lastSpeedX = -this.speed;
+            this.speedXShoot = -this.speed;
         }
         this.shoots = new ArrayList<Shoot_Range>(0);
         this.numberShot = 0;
@@ -86,6 +88,65 @@ public class Range extends Player {
     public void move() {
         super.move();
 
+        if (recharge <= RECHARGE_TIME) {
+            recharge++;
+        } else {
+            recharge = 0;
+            numberShot = shoots.size();
+            for (int i = 0; i < shoots.size(); i++) {
+                if (shoots.get(i) == null) {
+                    numberShot = i;
+                    break;
+                }
+            }
+            Shoot_Range newShot = new Shoot_Range(x + diameter / 3, y + diameter / 3, speedXShoot,
+                    speedYShoot, this.enemy, this.numberShot, this);
+            if (numberShot < shoots.size()) {
+                shoots.set(numberShot, newShot);
+            } else {
+                shoots.add(numberShot, newShot);
+            }
+        }
+
+        for (int i = 0; i < shoots.size(); i++) {
+            if (shoots.get(i) != null)
+                shoots.get(i).move();
+        }
+    }
+
+    public void eliminateThisShot(int index) {
+        this.shoots.set(index, null);
+    }
+
+
+    public void keyPressed(KeyEvent e) {
+        super.keyPressed(e);
+        System.out.println("Entra aquí");
+        if (e.getKeyCode() == KeyEvent.VK_F || e.getKeyCode() == KeyEvent.VK_NUMPAD1) {
+            speedXShoot = -1;
+            speedYShoot = 0;
+            System.out.println("-X");
+        }
+        if (e.getKeyCode() == KeyEvent.VK_H || e.getKeyCode() == KeyEvent.VK_NUMPAD3) {
+            speedXShoot = 1;
+            speedYShoot = 0;
+            System.out.println("x");
+        }
+        if (e.getKeyCode() == KeyEvent.VK_T || e.getKeyCode() == KeyEvent.VK_NUMPAD5) {
+            speedYShoot = -1;
+            speedXShoot = 0;
+        }
+        if (e.getKeyCode() == KeyEvent.VK_G || e.getKeyCode() == KeyEvent.VK_NUMPAD2) {
+            speedYShoot = 1;
+            speedXShoot = 0;
+        }
+
+    }
+
+
+    /*public void move() {
+        super.move();
+
         if (speedYPos - speedYNeg != 0) {
             this.lastSpeedY = speedYPos - speedYNeg;
         } else if (speedXPos - speedXNeg != 0) {
@@ -121,10 +182,5 @@ public class Range extends Player {
             if (shoots.get(i) != null)
                 shoots.get(i).move();
         }
-    }
-
-    public void eliminateThisShot(int index) {
-        this.shoots.set(index, null);
-    }
-
+    }*/
 }
