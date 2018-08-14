@@ -11,8 +11,8 @@ import java.util.ArrayList;
  */
 public class Range extends Player {
 
-    private static final int HEALTH_RANGE = 95;
-    private static final int DAMAGE_RANGE = AttackPlanet.getDamage();
+    private static final double HEALTH_RANGE = 95;
+    private static final double DAMAGE_RANGE = AttackPlanet.getDamage();
     private static final int SPEED_RANGE = 7;
     protected static final int DIAMETER_RANGE = 60;
     private static final int RECHARGE_TIME = 30;

@@ -12,9 +12,9 @@ import java.awt.event.KeyEvent;
 public abstract class Player {
 
     protected int diameter;
-    protected int health;
-    protected int maxHealth;
-    protected int damage;
+    protected double health;
+    protected double maxHealth;
+    protected double damage;
     protected int speed;
     protected Number_of_player numPlayer;
     protected Player enemy;
@@ -22,6 +22,7 @@ public abstract class Player {
     protected ImageIcon img;
     protected boolean invulnerable;
     protected int contInvulnerable;
+    protected int poisoned;
 
     protected int x;
     protected int y;
@@ -36,7 +37,7 @@ public abstract class Player {
     private static final int HEIGHT_LIFE_BAR = 15;
 
 
-    public Player(int health, int damage, int speed, Game game, Number_of_player numPlayer, Player enemy, int diameter) {
+    public Player(double health, double damage, int speed, Game game, Number_of_player numPlayer, Player enemy, int diameter) {
         this.health = health;
         this.maxHealth = this.health;
         this.damage = damage;
@@ -47,6 +48,7 @@ public abstract class Player {
         this.enemy = enemy;
         this.invulnerable = false;
         this.contInvulnerable = 0;
+        this.poisoned = 0;
 
         //Posición inicial
         if (this.numPlayer == Number_of_player.PLAYER1) {
@@ -83,6 +85,11 @@ public abstract class Player {
         } else {
             x = x + speedXPos - speedXNeg;
             y = y + speedYPos - speedYNeg;
+        }
+
+        if(poisoned>0){
+            poisoned--;
+            this.dealDamage(PoisonsPoison.DAMAGE_POISON);
         }
 
         if(invulnerable){
@@ -159,7 +166,7 @@ public abstract class Player {
     }
 
 
-    public void dealDamage(int damage) {
+    public void dealDamage(double damage) {
         if (!invulnerable)
             this.health -= damage;
     }
@@ -175,7 +182,7 @@ public abstract class Player {
         return this.numPlayer;
     }
 
-    public int getMaxHealth() {
+    public double getMaxHealth() {
         return this.maxHealth;
     }
 
@@ -199,7 +206,7 @@ public abstract class Player {
                 }
             } else {
                 g.fillRect(X_LIFE_BAR, Y_LIFE_BAR,
-                        WIDTH_LIFE_BAR * this.health / this.getMaxHealth(), HEIGHT_LIFE_BAR);
+                        (int)(WIDTH_LIFE_BAR * this.health / (this.getMaxHealth())), HEIGHT_LIFE_BAR);
             }
 
         } else {
@@ -221,7 +228,7 @@ public abstract class Player {
                 }
             } else {
                 g.fillRect(Game.WIDTH - X_LIFE_BAR - WIDTH_LIFE_BAR, Y_LIFE_BAR,
-                        WIDTH_LIFE_BAR * this.health / this.getMaxHealth(), HEIGHT_LIFE_BAR);
+                        (int)(WIDTH_LIFE_BAR * this.health / this.getMaxHealth()), HEIGHT_LIFE_BAR);
             }
         }
     }
@@ -236,5 +243,10 @@ public abstract class Player {
         } else {
             this.health = this.maxHealth;
         }
+    }
+
+
+    public void poisonPlayer(){
+        this.poisoned = PoisonsPoison.POISON_TIME;
     }
 }

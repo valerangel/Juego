@@ -13,7 +13,7 @@ public class Main {
 
         int timeSleeping = 15;
 
-        String[] pJAvailable = {"Planet", "Melee", "Range"};
+        String[] pJAvailable = {"Planet", "Melee", "Range", "Poison"};
         int select1 = JOptionPane.showOptionDialog(null, "PLAYER 1. SELECT CHARACTER",
                 "Select", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, pJAvailable, pJAvailable[0]);
         int select2 = JOptionPane.showOptionDialog(null, "PLAYER 2. SELECT CHARACTER",
@@ -23,16 +23,20 @@ public class Main {
             player1 = new Planet(Number_of_player.PLAYER1, null);
         } else if (select1 == 1) {
             player1 = new Melee(Number_of_player.PLAYER1, null);
-        } else {
+        } else if (select1 == 2) {
             player1 = new Range(Number_of_player.PLAYER1, null);
+        } else {
+            player1 = new Poison(Number_of_player.PLAYER1, null);
         }
 
         if (select2 == 0) {
             player2 = new Planet(Number_of_player.PLAYER2, player1);
         } else if (select2 == 1) {
             player2 = new Melee(Number_of_player.PLAYER2, player1);
-        } else {
+        } else if (select2 == 2) {
             player2 = new Range(Number_of_player.PLAYER2, player1);
+        } else {
+            player2 = new Poison(Number_of_player.PLAYER2, player1);
         }
 
         player1.setEnemy(player2);
