@@ -1,6 +1,7 @@
 package game;
 
 import game.boost.Boost_Heal;
+import game.boost.Boost_Mine;
 import game.player.Number_of_player;
 import game.player.Player;
 import game.boost.Boost;
@@ -131,8 +132,12 @@ public class Game extends JPanel {
         }
         Boost newBoost;
 
-        //Random entre los diferentes boost, no solo Boost_Heal
-        newBoost = new Boost_Heal( numBoost, this);
+        double random = Math.random();
+        if(random < 0.3) {
+            newBoost = new Boost_Heal(numBoost, this);
+        } else{
+            newBoost = new Boost_Mine(numBoost, this);
+        }
 
         if (numBoost < boosts.size()) {
             boosts.set(numBoost, newBoost);
