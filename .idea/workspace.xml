@@ -7,16 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c39f8791-fe52-48bd-9b67-e2008a145d0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/Melee1Boosted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/Melee2Boosted.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/Game.java" afterPath="$PROJECT_DIR$/src/game/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/boost/Boost_Heal.java" afterPath="$PROJECT_DIR$/src/game/boost/Boost_Heal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/AttackPlanet.java" afterPath="$PROJECT_DIR$/src/game/player/AttackPlanet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Melee.java" afterPath="$PROJECT_DIR$/src/game/player/Melee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Planet.java" afterPath="$PROJECT_DIR$/src/game/player/Planet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Player.java" afterPath="$PROJECT_DIR$/src/game/player/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Range.java" afterPath="$PROJECT_DIR$/src/game/player/Range.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -820,7 +811,7 @@
       <workItem from="1533933429557" duration="1882000" />
       <workItem from="1534175559673" duration="2982000" />
       <workItem from="1534189500602" duration="1302000" />
-      <workItem from="1534242403522" duration="3680000" />
+      <workItem from="1534242403522" duration="3724000" />
     </task>
     <task id="LOCAL-00001" summary="Probando esto a ver">
       <created>1529521666950</created>
@@ -857,11 +848,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533933502472</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added boost to Melee">
+      <created>1534246126637</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1534246126637</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84510000" />
+    <option name="totallyTimeSpent" value="84554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -942,7 +940,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Probando esto a ver" />
     <MESSAGE value="Cambiado forma de disparo de Range" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambiado forma de disparo de Range" />
+    <MESSAGE value="Added boost to Melee" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added boost to Melee" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
