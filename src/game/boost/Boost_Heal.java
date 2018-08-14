@@ -11,7 +11,7 @@ import java.awt.*;
  */
 public class Boost_Heal extends Boost {
 
-    private static final int MAX_TIME = 200;
+    private static final int MAX_TIME = 2000;
     private static final int DIAMETER_HEAL = 20;
     private static final int HEALING = 25;
     private static final String RESOURCHE_PATH = "/icon/Heal.png";
@@ -19,7 +19,7 @@ public class Boost_Heal extends Boost {
 
     public Boost_Heal(int index, Game game) {
         super((int) (Math.random() * (game.getWidth()- DIAMETER_HEAL)),
-                (int) (Math.random() * (game.getHeight()*DIAMETER_HEAL)) ,
+                (int) (Math.random() * (game.getHeight()-DIAMETER_HEAL)) ,
                 DIAMETER_HEAL, Boost_Heal.MAX_TIME, index, RESOURCHE_PATH, game);
     }
 

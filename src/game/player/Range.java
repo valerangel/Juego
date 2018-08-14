@@ -15,7 +15,7 @@ public class Range extends Player {
     private static final int DAMAGE_RANGE = AttackPlanet.getDamage();
     private static final int SPEED_RANGE = 7;
     protected static final int DIAMETER_RANGE = 60;
-    private static final int RECHARGE_TIME = 15;
+    private static final int RECHARGE_TIME = 30;
 
     private static final int WIDTH_RECHARGE_BAR = 150;
     private static final int HEIGHT_RECHARGE_BAR = 15;
@@ -121,16 +121,13 @@ public class Range extends Player {
 
     public void keyPressed(KeyEvent e) {
         super.keyPressed(e);
-        System.out.println("Entra aquí");
         if (e.getKeyCode() == KeyEvent.VK_F || e.getKeyCode() == KeyEvent.VK_NUMPAD1) {
             speedXShoot = -1;
             speedYShoot = 0;
-            System.out.println("-X");
         }
         if (e.getKeyCode() == KeyEvent.VK_H || e.getKeyCode() == KeyEvent.VK_NUMPAD3) {
             speedXShoot = 1;
             speedYShoot = 0;
-            System.out.println("x");
         }
         if (e.getKeyCode() == KeyEvent.VK_T || e.getKeyCode() == KeyEvent.VK_NUMPAD5) {
             speedYShoot = -1;

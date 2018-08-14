@@ -20,6 +20,8 @@ public abstract class Player {
     protected Player enemy;
     protected Game game;
     protected ImageIcon img;
+    protected boolean invulnerable;
+    protected int contInvulnerable;
 
     protected int x;
     protected int y;
@@ -43,6 +45,8 @@ public abstract class Player {
         this.game = game;
         this.diameter = diameter;
         this.enemy = enemy;
+        this.invulnerable = false;
+        this.contInvulnerable = 0;
 
         //Posición inicial
         if (this.numPlayer == Number_of_player.PLAYER1) {
@@ -70,11 +74,28 @@ public abstract class Player {
         if (y + speedYPos - speedYNeg > game.getHeight() - diameter)
             speedYPos = 0;
 
-        x = x + speedXPos - speedXNeg;
-        y = y + speedYPos - speedYNeg;
+        boolean diag = false;
+        if ((speedXPos - speedXNeg) * (speedYPos - speedYNeg) != 0) diag = true;
+
+        if (diag) {
+            x = (int) (x + (speedXPos - speedXNeg) * 0.71);
+            y = (int) (y + (speedYPos - speedYNeg) * 0.71);
+        } else {
+            x = x + speedXPos - speedXNeg;
+            y = y + speedYPos - speedYNeg;
+        }
+
+        if(invulnerable){
+            contInvulnerable++;
+        }
+        if(contInvulnerable > 100){
+            contInvulnerable = 0;
+            this.invulnerable = false;
+        }
 
         if (this.health <= 0) game.gameOver(this.enemy.getNumPlayer());
     }
+
 
     public void setEnemy(Player enemy) {
         this.enemy = enemy;
@@ -139,7 +160,15 @@ public abstract class Player {
 
 
     public void dealDamage(int damage) {
-        this.health -= damage;
+        if (!invulnerable)
+            this.health -= damage;
+    }
+
+    public void dealDamageInv(int damage) {
+        if (!invulnerable) {
+            this.health -= damage;
+            invulnerable = true;
+        }
     }
 
     public Number_of_player getNumPlayer() {

@@ -9,7 +9,7 @@ import java.awt.*;
  */
 
 public class Planet extends Player {
-    private static final int HEALTH_PLANET = 150;
+    private static final int HEALTH_PLANET = 120;
     private static final int DAMAGE_PLANET = AttackPlanet.getDamage();
     private static final int SPEED_PLANET = 7;
     private static final int DIAMETER_PLANET = 48;

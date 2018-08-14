@@ -8,10 +8,10 @@ import java.awt.*;
 
 public class AttackPlanet {
 
-    private static final double ANGULAR_SPEED_ATTACK_MELEE = 0.040;
+    private static final double ANGULAR_SPEED_ATTACK_MELEE = 0.062;
     private static final int DIAM = 27;
     private static final int DISTANCE = 100;
-    private static final int DAMAGE = 2;
+    private static final int DAMAGE = 5;
 
     private int a;
     private int b;

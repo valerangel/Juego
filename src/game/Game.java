@@ -19,7 +19,7 @@ public class Game extends JPanel {
 
     public static final int WIDTH = 1000;
     public static final int HEIGHT = 600;
-    public static final int TIME_FOR_BOOST = 600;
+    public static final int TIME_FOR_BOOST = 1000;
 
     private Player player1;
     private Player player2;
@@ -46,11 +46,15 @@ public class Game extends JPanel {
             @Override
             public void keyReleased(KeyEvent e) {
                 if ((e.getKeyCode() == KeyEvent.VK_LEFT) || (e.getKeyCode() == KeyEvent.VK_RIGHT) ||
-                        (e.getKeyCode() == KeyEvent.VK_UP) || (e.getKeyCode() == KeyEvent.VK_DOWN) ) {
+                        (e.getKeyCode() == KeyEvent.VK_UP) || (e.getKeyCode() == KeyEvent.VK_DOWN) ||
+                        (e.getKeyCode() == KeyEvent.VK_NUMPAD5) || (e.getKeyCode() == KeyEvent.VK_NUMPAD3) ||
+                        (e.getKeyCode() == KeyEvent.VK_NUMPAD2) || (e.getKeyCode() == KeyEvent.VK_NUMPAD1) ) {
                     player1.keyReleased(e);
                 }
                 if (e.getKeyCode() == KeyEvent.VK_W || e.getKeyCode() == KeyEvent.VK_A ||
-                        e.getKeyCode() == KeyEvent.VK_S || e.getKeyCode() == KeyEvent.VK_D ) {
+                        e.getKeyCode() == KeyEvent.VK_S || e.getKeyCode() == KeyEvent.VK_D ||
+                        e.getKeyCode() == KeyEvent.VK_F || e.getKeyCode() == KeyEvent.VK_G ||
+                        e.getKeyCode() == KeyEvent.VK_H || e.getKeyCode() == KeyEvent.VK_T ) {
                     player2.keyReleased(e);
                 }
 
