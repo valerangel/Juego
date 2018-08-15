@@ -9,10 +9,10 @@ import java.awt.event.KeyEvent;
  * Created by Angel on 22/06/2018.
  */
 public class Melee extends Player {
-    private static final int HEALTH_MELEE = 100;
-    private static final int DAMAGE_MELEE = 12;
-    private static final int SPEED_MELEE = 7;
-    private static final int SPEED_MELEE_BOOSTED = 20;
+    private static final int HEALTH_MELEE = 110;
+    private static final int DAMAGE_MELEE = 18;
+    private static final int SPEED_MELEE = 6;
+    private static final int SPEED_MELEE_BOOSTED = 10;
     private static final int DIAMETER_MELEE = 30;
 
     private static final int RECHARGE_TIME = 200;

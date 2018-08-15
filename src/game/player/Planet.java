@@ -9,9 +9,9 @@ import java.awt.*;
  */
 
 public class Planet extends Player {
-    private static final int HEALTH_PLANET = 120;
-    private static final int DAMAGE_PLANET = AttackPlanet.getDamage();
-    private static final int SPEED_PLANET = 7;
+    private static final double HEALTH_PLANET = 150;
+    private static final double DAMAGE_PLANET = AttackPlanet.getDamage();
+    private static final int SPEED_PLANET = 6;
     private static final int DIAMETER_PLANET = 48;
 
     private AttackPlanet attackPlanet;
@@ -46,11 +46,6 @@ public class Planet extends Player {
     public void paint(Graphics2D g) {
         Image image = getImageIcon().getImage();
         g.drawImage(image, x, y, diameter, diameter, game);
-        /*Rectangle[] rectangles = this.getBoundsArr();
-        for (int i = 0; i < rectangles.length; i++) {
-            g.setColor(Color.BLACK);
-            g.draw(rectangles[i]);
-        }*/
         this.attackPlanet.paint(g);
 
         super.paintLifeBar(g);

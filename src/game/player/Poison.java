@@ -13,7 +13,7 @@ public class Poison extends Player {
 
     private static final double HEALTH_POISON = 120;
     private static final double DAMAGE_POISON = AttackPlanet.getDamage();
-    private static final int SPEED_POISON = 7;
+    private static final int SPEED_POISON = 6;
     protected static final int DIAMETER_POISON = 60;
     private static final int RECHARGE_TIME = 3;
 

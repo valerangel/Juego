@@ -12,10 +12,10 @@ import java.util.ArrayList;
 public class Range extends Player {
 
     private static final double HEALTH_RANGE = 95;
-    private static final double DAMAGE_RANGE = AttackPlanet.getDamage();
-    private static final int SPEED_RANGE = 7;
+    private static final double DAMAGE_RANGE = Shoot_Range.getDamage();
+    private static final int SPEED_RANGE = 6;
     protected static final int DIAMETER_RANGE = 60;
-    private static final int RECHARGE_TIME = 30;
+    private static final int RECHARGE_TIME = 20;
 
     private static final int WIDTH_RECHARGE_BAR = 150;
     private static final int HEIGHT_RECHARGE_BAR = 15;
@@ -140,44 +140,4 @@ public class Range extends Player {
 
     }
 
-
-    /*public void move() {
-        super.move();
-
-        if (speedYPos - speedYNeg != 0) {
-            this.lastSpeedY = speedYPos - speedYNeg;
-        } else if (speedXPos - speedXNeg != 0) {
-            this.lastSpeedY = 0;
-        }
-        if (speedXPos - speedXNeg != 0) {
-            this.lastSpeedX = speedXPos - speedXNeg;
-        } else if (speedYPos - speedYNeg != 0) {
-            this.lastSpeedX = 0;
-        }
-
-        if (recharge <= RECHARGE_TIME) {
-            recharge++;
-        } else {
-            recharge = 0;
-            numberShot = shoots.size();
-            for (int i = 0; i < shoots.size(); i++) {
-                if (shoots.get(i) == null) {
-                    numberShot = i;
-                    break;
-                }
-            }
-            Shoot_Range newShot = new Shoot_Range(x + diameter / 3, y + diameter / 3, lastSpeedX,
-                    lastSpeedY, this.enemy, this.numberShot, this);
-            if (numberShot < shoots.size()) {
-                shoots.set(numberShot, newShot);
-            } else {
-                shoots.add(numberShot, newShot);
-            }
-        }
-
-        for (int i = 0; i < shoots.size(); i++) {
-            if (shoots.get(i) != null)
-                shoots.get(i).move();
-        }
-    }*/
 }

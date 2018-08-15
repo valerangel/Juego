@@ -6,12 +6,19 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c39f8791-fe52-48bd-9b67-e2008a145d0d" name="Default" comment="Added mines">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/Mine.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controles.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/boost/Boost_Mine.java" />
+    <list default="true" id="c39f8791-fe52-48bd-9b67-e2008a145d0d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/Background.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/Background.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/Game.java" afterPath="$PROJECT_DIR$/src/game/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/AttackPlanet.java" afterPath="$PROJECT_DIR$/src/game/player/AttackPlanet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Melee.java" afterPath="$PROJECT_DIR$/src/game/player/Melee.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Planet.java" afterPath="$PROJECT_DIR$/src/game/player/Planet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Player.java" afterPath="$PROJECT_DIR$/src/game/player/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Poison.java" afterPath="$PROJECT_DIR$/src/game/player/Poison.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/PoisonsPoison.java" afterPath="$PROJECT_DIR$/src/game/player/PoisonsPoison.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Range.java" afterPath="$PROJECT_DIR$/src/game/player/Range.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Shoot_Range.java" afterPath="$PROJECT_DIR$/src/game/player/Shoot_Range.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,40 +31,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Boost_Heal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/boost/Boost_Heal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+            <state relative-caret-position="-233">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="method#Game#0;class#Game#0" expanded="false" />
-                <element signature="class#991:3111" expanded="false" />
-                <element signature="method#keyTyped#0;class#991:3111" expanded="false" />
-                <element signature="method#keyReleased#0;class#991:3111" expanded="false" />
-                <element signature="method#keyPressed#0;class#991:3111" expanded="false" />
+                <element signature="class#877:2997" expanded="false" />
+                <element signature="method#keyTyped#0;class#877:2997" expanded="false" />
+                <element signature="method#keyReleased#0;class#877:2997" expanded="false" />
+                <element signature="method#keyPressed#0;class#877:2997" expanded="false" />
+                <element signature="method#move#0;class#Game#0" expanded="false" />
                 <element signature="method#paint#0;class#Game#0" expanded="false" />
+                <element signature="method#paintBackground#0;class#Game#0" expanded="false" />
                 <element signature="method#gameOver#0;class#Game#0" expanded="false" />
+                <element signature="method#createBoost#0;class#Game#0" expanded="false" />
                 <element signature="method#paintBoosts#0;class#Game#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Melee.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Melee.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/player/Melee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="129" column="32" lean-forward="false" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+            <state relative-caret-position="119">
+              <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
               <folding>
                 <element signature="docComment;class#Melee#0" expanded="false" />
                 <element signature="method#Melee#0;class#Melee#0" expanded="false" />
@@ -75,21 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="38" column="68" lean-forward="false" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Range.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/Range.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="765">
+              <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -98,11 +88,11 @@
       <file leaf-file-name="Shoot_Range.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/Shoot_Range.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+            <state relative-caret-position="1513">
+              <caret line="92" column="18" lean-forward="false" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
               <folding>
-                <element signature="e#3300#3301#0" expanded="true" />
-                <element signature="e#3384#3385#0" expanded="true" />
+                <element signature="e#2379#2380#0" expanded="true" />
+                <element signature="e#2419#2420#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,8 +101,31 @@
       <file leaf-file-name="Poison.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/Poison.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="935">
+              <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="46" />
+              <folding>
+                <element signature="e#1218#1219#0" expanded="true" />
+                <element signature="e#1262#1263#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Planet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="47" column="59" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="47" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttackPlanet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/AttackPlanet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1360">
+              <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -121,23 +134,9 @@
       <file leaf-file-name="PoisonsPoison.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/PoisonsPoison.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="153">
+              <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Boost_Mine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/boost/Boost_Mine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" column="29" lean-forward="false" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1521#1522#0" expanded="true" />
-                <element signature="e#1593#1594#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -145,16 +144,13 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="126" column="5" lean-forward="true" selection-start-line="116" selection-start-column="4" selection-end-line="126" selection-end-column="5" />
+            <state relative-caret-position="1751">
+              <caret line="111" column="33" lean-forward="false" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
               <folding>
                 <element signature="docComment;class#Player#0" expanded="false" />
-                <element signature="method#Player#0;class#Player#0" expanded="false" />
-                <element signature="method#move#0;class#Player#0" expanded="false" />
                 <element signature="method#keyReleased#0;class#Player#0" expanded="false" />
                 <element signature="method#keyPressed#0;class#Player#0" expanded="false" />
                 <element signature="method#dealDamage#0;class#Player#0" expanded="false" />
-                <element signature="method#dealDamageInv#0;class#Player#0" expanded="false" />
                 <element signature="method#paintLifeBar#0;class#Player#0" expanded="false" />
                 <element signature="method#heal#0;class#Player#0" expanded="false" />
               </folding>
@@ -212,17 +208,17 @@
         <option value="$PROJECT_DIR$/src/game/Melee.java" />
         <option value="$PROJECT_DIR$/src/game/boost/Boost.java" />
         <option value="$PROJECT_DIR$/src/game/player/Number_of_player.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Shoot_Range.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Planet.java" />
-        <option value="$PROJECT_DIR$/src/game/player/AttackPlanet.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Melee.java" />
         <option value="$PROJECT_DIR$/src/game/boost/Boost_Heal.java" />
         <option value="$PROJECT_DIR$/src/game/Main.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Range.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Player.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Poison.java" />
-        <option value="$PROJECT_DIR$/src/game/player/PoisonsPoison.java" />
         <option value="$PROJECT_DIR$/src/game/boost/Boost_Mine.java" />
+        <option value="$PROJECT_DIR$/src/game/player/PoisonsPoison.java" />
+        <option value="$PROJECT_DIR$/src/game/player/AttackPlanet.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Poison.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Melee.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Player.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Range.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Shoot_Range.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Planet.java" />
         <option value="$PROJECT_DIR$/src/game/Game.java" />
       </list>
     </option>
@@ -257,6 +253,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -347,8 +345,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -834,7 +830,10 @@
       <workItem from="1534189500602" duration="1302000" />
       <workItem from="1534242403522" duration="7660000" />
       <workItem from="1534266438947" duration="107000" />
-      <workItem from="1534266771324" duration="879000" />
+      <workItem from="1534266771324" duration="1508000" />
+      <workItem from="1534282310490" duration="428000" />
+      <workItem from="1534283539416" duration="3555000" />
+      <workItem from="1534343248894" duration="1106000" />
     </task>
     <task id="LOCAL-00001" summary="Probando esto a ver">
       <created>1529521666950</created>
@@ -899,11 +898,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534251034104</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added mines">
+      <created>1534267675098</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1534267675098</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89476000" />
+    <option name="totallyTimeSpent" value="95194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -917,20 +923,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32561728" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19894099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20801815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6128" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6128" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -986,11 +992,12 @@
     <MESSAGE value="Cambiado forma de disparo de Range" />
     <MESSAGE value="Added Poison player" />
     <MESSAGE value="Added boost to Melee" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added boost to Melee" />
+    <MESSAGE value="Added mines" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mines" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -999,7 +1006,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/AttackPlanet.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Game.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Number_of_player.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Planet.java" />
@@ -1131,70 +1137,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="45" lean-forward="true" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/AttackPlanet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="65" lean-forward="false" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/boost/Boost.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Shoot_Range.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding>
-            <element signature="e#3300#3301#0" expanded="true" />
-            <element signature="e#3384#3385#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="38" column="68" lean-forward="false" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Range.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Poison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/PoisonsPoison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1206,10 +1152,126 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/boost/Boost_Mine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="62" column="29" lean-forward="false" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/PoisonsPoison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/AttackPlanet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Shoot_Range.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="92" column="18" lean-forward="false" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+          <folding>
+            <element signature="e#2379#2380#0" expanded="true" />
+            <element signature="e#2419#2420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="47" column="59" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="47" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/ImageIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="370" column="17" lean-forward="false" selection-start-line="370" selection-start-column="17" selection-end-line="370" selection-end-column="17" />
+          <folding>
+            <element signature="e#11859#11860#0" expanded="true" />
+            <element signature="e#11887#11888#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Range.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="111" column="33" lean-forward="false" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+          <folding>
+            <element signature="docComment;class#Player#0" expanded="false" />
+            <element signature="method#keyReleased#0;class#Player#0" expanded="false" />
+            <element signature="method#keyPressed#0;class#Player#0" expanded="false" />
+            <element signature="method#dealDamage#0;class#Player#0" expanded="false" />
+            <element signature="method#paintLifeBar#0;class#Player#0" expanded="false" />
+            <element signature="method#heal#0;class#Player#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Poison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="46" />
+          <folding>
+            <element signature="e#1218#1219#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="class#877:2997" expanded="false" />
+            <element signature="method#keyTyped#0;class#877:2997" expanded="false" />
+            <element signature="method#keyReleased#0;class#877:2997" expanded="false" />
+            <element signature="method#keyPressed#0;class#877:2997" expanded="false" />
+            <element signature="method#move#0;class#Game#0" expanded="false" />
+            <element signature="method#paint#0;class#Game#0" expanded="false" />
+            <element signature="method#paintBackground#0;class#Game#0" expanded="false" />
+            <element signature="method#gameOver#0;class#Game#0" expanded="false" />
+            <element signature="method#createBoost#0;class#Game#0" expanded="false" />
+            <element signature="method#paintBoosts#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/player/Melee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="129" column="32" lean-forward="false" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+        <state relative-caret-position="119">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
           <folding>
             <element signature="docComment;class#Melee#0" expanded="false" />
             <element signature="method#Melee#0;class#Melee#0" expanded="false" />
@@ -1222,53 +1284,6 @@
             <element signature="method#collision#0;class#Melee#0" expanded="false" />
             <element signature="method#keyReleased#0;class#Melee#0" expanded="false" />
             <element signature="method#keyPressed#0;class#Melee#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="126" column="5" lean-forward="true" selection-start-line="116" selection-start-column="4" selection-end-line="126" selection-end-column="5" />
-          <folding>
-            <element signature="docComment;class#Player#0" expanded="false" />
-            <element signature="method#Player#0;class#Player#0" expanded="false" />
-            <element signature="method#move#0;class#Player#0" expanded="false" />
-            <element signature="method#keyReleased#0;class#Player#0" expanded="false" />
-            <element signature="method#keyPressed#0;class#Player#0" expanded="false" />
-            <element signature="method#dealDamage#0;class#Player#0" expanded="false" />
-            <element signature="method#dealDamageInv#0;class#Player#0" expanded="false" />
-            <element signature="method#paintLifeBar#0;class#Player#0" expanded="false" />
-            <element signature="method#heal#0;class#Player#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/boost/Boost_Mine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="29" lean-forward="false" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1521#1522#0" expanded="true" />
-            <element signature="e#1593#1594#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-          <folding>
-            <element signature="method#Game#0;class#Game#0" expanded="false" />
-            <element signature="class#991:3111" expanded="false" />
-            <element signature="method#keyTyped#0;class#991:3111" expanded="false" />
-            <element signature="method#keyReleased#0;class#991:3111" expanded="false" />
-            <element signature="method#keyPressed#0;class#991:3111" expanded="false" />
-            <element signature="method#paint#0;class#Game#0" expanded="false" />
-            <element signature="method#gameOver#0;class#Game#0" expanded="false" />
-            <element signature="method#paintBoosts#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>

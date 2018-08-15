@@ -90,6 +90,10 @@ public class Shoot_Range {
         return false;
     }
 
+    public static double getDamage(){
+        return DAMAGE_SHOT_RANGE;
+    }
+
     public Rectangle[] getBoundsArr() {
         Rectangle[] rectangles = new Rectangle[4];
         rectangles[0] = new Rectangle(x, y + DIAMETER_SHOT_RANGE / 3, DIAMETER_SHOT_RANGE, DIAMETER_SHOT_RANGE / 3);

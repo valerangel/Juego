@@ -35,6 +35,7 @@ public abstract class Player {
     private static final int Y_LIFE_BAR = 30;
     private static final int WIDTH_LIFE_BAR = 150;
     private static final int HEIGHT_LIFE_BAR = 15;
+    private static final int TIME_INVULNERABLE = 50;
 
 
     public Player(double health, double damage, int speed, Game game, Number_of_player numPlayer, Player enemy, int diameter) {
@@ -52,10 +53,10 @@ public abstract class Player {
 
         //Posición inicial
         if (this.numPlayer == Number_of_player.PLAYER1) {
-            x = 100;
+            x = 50;
             y = 200;
         } else {
-            x = 500;
+            x = 900;
             y = 200;
         }
 
@@ -95,7 +96,7 @@ public abstract class Player {
         if(invulnerable){
             contInvulnerable++;
         }
-        if(contInvulnerable > 100){
+        if(contInvulnerable > TIME_INVULNERABLE){
             contInvulnerable = 0;
             this.invulnerable = false;
         }

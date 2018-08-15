@@ -6,16 +6,12 @@ import game.player.Number_of_player;
 import game.player.Player;
 import game.boost.Boost;
 
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.RenderingHints;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
+import javax.swing.*;
 
-//HOLAAAA
 public class Game extends JPanel {
 
     public static final int WIDTH = 1000;
@@ -107,9 +103,17 @@ public class Game extends JPanel {
         Graphics2D g2d = (Graphics2D) g;
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                 RenderingHints.VALUE_ANTIALIAS_ON);
+        this.paintBackground(g2d);
+
         player1.paint(g2d);
         player2.paint(g2d);
         this.paintBoosts(g2d);
+    }
+
+    private void paintBackground(Graphics2D g2d){
+        ImageIcon img = new javax.swing.ImageIcon(getClass().getResource("/icon/BackGround.png"));;
+        Image image = img.getImage();
+        g2d.drawImage(image, 0, 0, WIDTH, HEIGHT, this);
     }
 
     public void gameOver(Number_of_player winner) {

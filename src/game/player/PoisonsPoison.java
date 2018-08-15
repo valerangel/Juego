@@ -10,7 +10,7 @@ import java.awt.*;
  */
 public class PoisonsPoison {
 
-    public static final double DAMAGE_POISON = 0.2;
+    public static final double DAMAGE_POISON = 0.25;
     public static final int POISON_TIME = 40;
     private static final int DIAMETER_POISON = (int) (Poison.DIAMETER_POISON / 2);
 

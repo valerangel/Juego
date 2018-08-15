@@ -11,7 +11,7 @@ public class AttackPlanet {
     private static final double ANGULAR_SPEED_ATTACK_MELEE = 0.062;
     private static final int DIAM = 27;
     private static final int DISTANCE = 100;
-    private static final int DAMAGE = 5;
+    private static final double DAMAGE = 4.1;
 
     private int a;
     private int b;
@@ -82,7 +82,7 @@ public class AttackPlanet {
         this.enemy = enemy;
     }
 
-    public static int getDamage() {
+    public static double getDamage() {
         return AttackPlanet.DAMAGE;
     }
 
