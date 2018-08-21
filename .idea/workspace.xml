@@ -7,23 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c39f8791-fe52-48bd-9b67-e2008a145d0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/Bullet_Shotgun.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/Poison1Boosted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/Poison2Boosted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/Shotgun1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/Shotgun2.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/icon/Background.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icon/Background.png" afterPath="$PROJECT_DIR$/src/icon/Background.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Bullet_Shotgun.java" afterPath="$PROJECT_DIR$/src/game/player/Bullet_Shotgun.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Melee.java" afterPath="$PROJECT_DIR$/src/game/player/Melee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Planet.java" afterPath="$PROJECT_DIR$/src/game/player/Planet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Player.java" afterPath="$PROJECT_DIR$/src/game/player/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Poison.java" afterPath="$PROJECT_DIR$/src/game/player/Poison.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/PoisonsPoison.java" afterPath="$PROJECT_DIR$/src/game/player/PoisonsPoison.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Range.java" afterPath="$PROJECT_DIR$/src/game/player/Range.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Shoot_Range.java" afterPath="$PROJECT_DIR$/src/game/player/Shoot_Range.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Shotgun.java" afterPath="$PROJECT_DIR$/src/game/player/Shotgun.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,8 +124,8 @@
       <file leaf-file-name="Poison.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/player/Poison.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="85">
+              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding>
                 <element signature="e#5510#5511#0" expanded="true" />
                 <element signature="e#5555#5556#0" expanded="true" />
@@ -848,7 +832,7 @@
       <workItem from="1534283539416" duration="3555000" />
       <workItem from="1534343248894" duration="1737000" />
       <workItem from="1534618303412" duration="1661000" />
-      <workItem from="1534853206278" duration="11200000" />
+      <workItem from="1534853206278" duration="12110000" />
     </task>
     <task id="LOCAL-00001" summary="Probando esto a ver">
       <created>1529521666950</created>
@@ -934,11 +918,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534858908967</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added a boost to Poison">
+      <created>1534867014142</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1534867014142</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Controls updated">
+      <created>1534867632871</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1534867632871</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108686000" />
+    <option name="totallyTimeSpent" value="109596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -1024,7 +1022,9 @@
     <MESSAGE value="Added mines" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="Added new player called Shotgun and Bullet_Shotgun" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new player called Shotgun and Bullet_Shotgun" />
+    <MESSAGE value="Added a boost to Poison" />
+    <MESSAGE value="Controls updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Controls updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1320,8 +1320,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/player/Poison.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="85">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
             <element signature="e#5510#5511#0" expanded="true" />
             <element signature="e#5555#5556#0" expanded="true" />
