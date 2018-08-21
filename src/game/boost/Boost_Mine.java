@@ -13,7 +13,7 @@ public class Boost_Mine extends Boost {
 
     private static final int MAX_TIME = 2000;
     private static final int DIAMETER_MINE = 20;
-    private static final int DAMAGE = 25;
+    private static final int DAMAGE = 18;
     private static final String RESOURCHE_PATH = "/icon/Mine.png";
 
 

@@ -60,16 +60,16 @@ public class Shoot_Range {
         y += speedY * SPEED_SHOT_RANGE;
         if (collision()) {
             enemy.dealDamage(this.DAMAGE_SHOT_RANGE);
-            range.eliminateThisShot(index);
+            range.eliminateThisShoot(index);
         }
 
         if (x <= -DIAMETER_SHOT_RANGE || x >= Game.WIDTH ||
                 y <= -DIAMETER_SHOT_RANGE || y >= Game.HEIGHT) {
-            range.eliminateThisShot(index);
+            range.eliminateThisShoot(index);
         }
 
         if (collisionAttackPlanet()) {
-            range.eliminateThisShot(index);
+            range.eliminateThisShoot(index);
         }
 
 

@@ -114,7 +114,7 @@ public class Range extends Player {
         }
     }
 
-    public void eliminateThisShot(int index) {
+    public void eliminateThisShoot(int index) {
         this.shoots.set(index, null);
     }
 
