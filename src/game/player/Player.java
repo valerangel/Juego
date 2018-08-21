@@ -15,7 +15,7 @@ public abstract class Player {
     protected double health;
     protected double maxHealth;
     protected double damage;
-    protected int speed;
+    protected double speed;
     protected Number_of_player numPlayer;
     protected Player enemy;
     protected Game game;
@@ -24,12 +24,12 @@ public abstract class Player {
     protected int contInvulnerable;
     protected int poisoned;
 
-    protected int x;
-    protected int y;
-    protected int speedXPos;
-    protected int speedYPos;
-    protected int speedXNeg;
-    protected int speedYNeg;
+    protected double x;
+    protected double y;
+    protected double speedXPos;
+    protected double speedYPos;
+    protected double speedXNeg;
+    protected double speedYNeg;
 
     private static final int X_LIFE_BAR = 40;
     private static final int Y_LIFE_BAR = 30;
@@ -38,7 +38,7 @@ public abstract class Player {
     private static final int TIME_INVULNERABLE = 50;
 
 
-    public Player(double health, double damage, int speed, Game game, Number_of_player numPlayer, Player enemy, int diameter) {
+    public Player(double health, double damage, double speed, Game game, Number_of_player numPlayer, Player enemy, int diameter) {
         this.health = health;
         this.maxHealth = this.health;
         this.damage = damage;
@@ -112,17 +112,17 @@ public abstract class Player {
     abstract public void paint(Graphics2D g);
 
     public Rectangle getBounds() {
-        return new Rectangle(x, y, diameter, diameter);
+        return new Rectangle((int)x, (int)y, diameter, diameter);
     }
 
     public Rectangle[] getBoundsArr() {
         Rectangle[] rectangles = new Rectangle[4];
-        rectangles[0] = new Rectangle(x, y + diameter / 3, diameter, diameter / 3);
-        rectangles[1] = new Rectangle(x + diameter / 12, y + diameter / 6,
+        rectangles[0] = new Rectangle((int)x,(int) y + diameter / 3, diameter, diameter / 3);
+        rectangles[1] = new Rectangle((int)x + diameter / 12,(int) y + diameter / 6,
                 5 * diameter / 6, 2 * diameter / 3);
-        rectangles[2] = new Rectangle(x + diameter / 6, y + diameter / 12,
+        rectangles[2] = new Rectangle((int)x + diameter / 6, (int)y + diameter / 12,
                 2 * diameter / 3, 5 * diameter / 6);
-        rectangles[3] = new Rectangle(x + diameter / 3, y, diameter / 3, diameter);
+        rectangles[3] = new Rectangle((int)x + diameter / 3, (int)y, diameter / 3, diameter);
 
         return rectangles;
     }
@@ -154,11 +154,11 @@ public abstract class Player {
         this.game = game;
     }
 
-    public int getX() {
+    public double getX() {
         return this.x;
     }
 
-    public int getY() {
+    public double getY() {
         return this.y;
     }
 

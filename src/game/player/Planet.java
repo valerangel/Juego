@@ -45,7 +45,7 @@ public class Planet extends Player {
     @Override
     public void paint(Graphics2D g) {
         Image image = getImageIcon().getImage();
-        g.drawImage(image, x, y, diameter, diameter, game);
+        g.drawImage(image, (int) x,(int)  y, diameter, diameter, game);
         this.attackPlanet.paint(g);
 
         super.paintLifeBar(g);
@@ -64,12 +64,12 @@ public class Planet extends Player {
 
     public Rectangle[] getBoundsArr() {
         Rectangle[] rectangles = new Rectangle[4];
-        rectangles[0] = new Rectangle(x, y + DIAMETER_PLANET / 3, DIAMETER_PLANET, DIAMETER_PLANET / 3);
-        rectangles[1] = new Rectangle(x + DIAMETER_PLANET / 12, y + DIAMETER_PLANET / 6,
+        rectangles[0] = new Rectangle((int)x,(int) y + DIAMETER_PLANET / 3, DIAMETER_PLANET, DIAMETER_PLANET / 3);
+        rectangles[1] = new Rectangle((int)x + DIAMETER_PLANET / 12, (int)y + DIAMETER_PLANET / 6,
                 5 * DIAMETER_PLANET / 6, 2 * DIAMETER_PLANET / 3);
-        rectangles[2] = new Rectangle(x + DIAMETER_PLANET / 6, y + DIAMETER_PLANET / 12,
+        rectangles[2] = new Rectangle((int)x + DIAMETER_PLANET / 6, (int)y + DIAMETER_PLANET / 12,
                 2 * DIAMETER_PLANET / 3, 5 * DIAMETER_PLANET / 6);
-        rectangles[3] = new Rectangle(x + DIAMETER_PLANET / 3, y, DIAMETER_PLANET / 3, DIAMETER_PLANET);
+        rectangles[3] = new Rectangle((int)x + DIAMETER_PLANET / 3, (int)y, DIAMETER_PLANET / 3, DIAMETER_PLANET);
 
         return rectangles;
     }

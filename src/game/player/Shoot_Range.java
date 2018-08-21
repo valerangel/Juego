@@ -14,8 +14,8 @@ public class Shoot_Range {
     private static final int SPEED_SHOT_RANGE = 9;
     private static final int DIAMETER_SHOT_RANGE = (int) (Range.DIAMETER_RANGE / 3);
 
-    private int x;
-    private int y;
+    private double x;
+    private double y;
     private int speedX;
     private int speedY;
     private Player enemy;
@@ -23,7 +23,7 @@ public class Shoot_Range {
     private Range range;
     private ImageIcon img;
 
-    public Shoot_Range(int x, int y, int speedX, int speedY, Player enemy, int index, Range range) {
+    public Shoot_Range(double x, double y, double speedX, double speedY, Player enemy, int index, Range range) {
         this.x = x;
         this.y = y;
         this.index = index;
@@ -52,7 +52,7 @@ public class Shoot_Range {
 
     public void paint(Graphics2D g, Game game) {
         Image image = this.img.getImage();
-        g.drawImage(image, x, y, DIAMETER_SHOT_RANGE, DIAMETER_SHOT_RANGE, game);
+        g.drawImage(image, (int) x,(int)  y, DIAMETER_SHOT_RANGE, DIAMETER_SHOT_RANGE, game);
     }
 
     public void move() {
@@ -96,12 +96,12 @@ public class Shoot_Range {
 
     public Rectangle[] getBoundsArr() {
         Rectangle[] rectangles = new Rectangle[4];
-        rectangles[0] = new Rectangle(x, y + DIAMETER_SHOT_RANGE / 3, DIAMETER_SHOT_RANGE, DIAMETER_SHOT_RANGE / 3);
-        rectangles[1] = new Rectangle(x + DIAMETER_SHOT_RANGE / 12, y + DIAMETER_SHOT_RANGE / 6,
+        rectangles[0] = new Rectangle((int) x,(int)  y + DIAMETER_SHOT_RANGE / 3, DIAMETER_SHOT_RANGE, DIAMETER_SHOT_RANGE / 3);
+        rectangles[1] = new Rectangle((int) x + DIAMETER_SHOT_RANGE / 12, (int) y + DIAMETER_SHOT_RANGE / 6,
                 5 * DIAMETER_SHOT_RANGE / 6, 2 * DIAMETER_SHOT_RANGE / 3);
-        rectangles[2] = new Rectangle(x + DIAMETER_SHOT_RANGE / 6, y + DIAMETER_SHOT_RANGE / 12,
+        rectangles[2] = new Rectangle((int) x + DIAMETER_SHOT_RANGE / 6, (int) y + DIAMETER_SHOT_RANGE / 12,
                 2 * DIAMETER_SHOT_RANGE / 3, 5 * DIAMETER_SHOT_RANGE / 6);
-        rectangles[3] = new Rectangle(x + DIAMETER_SHOT_RANGE / 3, y, DIAMETER_SHOT_RANGE / 3, DIAMETER_SHOT_RANGE);
+        rectangles[3] = new Rectangle((int) x + DIAMETER_SHOT_RANGE / 3, (int) y, DIAMETER_SHOT_RANGE / 3, DIAMETER_SHOT_RANGE);
 
         return rectangles;
     }
@@ -115,7 +115,7 @@ public class Shoot_Range {
     }
 
     public Rectangle getBounds() {
-        return new Rectangle(x, y, DIAMETER_SHOT_RANGE, DIAMETER_SHOT_RANGE);
+        return new Rectangle((int) x,(int)  y, DIAMETER_SHOT_RANGE, DIAMETER_SHOT_RANGE);
     }
 
 }

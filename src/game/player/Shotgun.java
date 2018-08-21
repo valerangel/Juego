@@ -11,12 +11,12 @@ import java.util.ArrayList;
  */
 public class Shotgun extends Player {
 
-    private static final double HEALTH_SHOTGUN = 90;
+    private static final double HEALTH_SHOTGUN = 120;
     private static final double DAMAGE_SHOTGUN = Bullet_Shotgun.getDamage();
-    private static final int SPEED_SHOTGUN = 6;
+    private static final int SPEED_SHOTGUN = 5;
     protected static final int DIAMETER_SHOTGUN = 60;
-    private static final int RECHARGE_SHOTGUN = 60;
-    private static final int BULLETS_PER_SHOT = 8;
+    private static final int RECHARGE_SHOTGUN = 80;
+    private static final int BULLETS_PER_SHOT = 9;
 
     private static final int WIDTH_RECHARGE_BAR = 150;
     private static final int HEIGHT_RECHARGE_BAR = 15;
@@ -49,7 +49,7 @@ public class Shotgun extends Player {
     public void paint(Graphics2D g) {
 
         Image image = this.img.getImage();
-        g.drawImage(image, x, y, DIAMETER_SHOTGUN, DIAMETER_SHOTGUN, game);
+        g.drawImage(image, (int)x,(int) y, DIAMETER_SHOTGUN, DIAMETER_SHOTGUN, game);
 
         for (int i = 0; i < bullets.size(); i++) {
             if (bullets.get(i) != null)
@@ -63,9 +63,9 @@ public class Shotgun extends Player {
     private void setImage(Number_of_player numPlayer) {
         String resourcePath;
         if (numPlayer == Number_of_player.PLAYER1) {
-            resourcePath = "/icon/Range1.png";
+            resourcePath = "/icon/Shotgun1.png";
         } else {
-            resourcePath = "/icon/Range2.png";
+            resourcePath = "/icon/Shotgun2.png";
         }
         this.img = new javax.swing.ImageIcon(getClass().getResource(resourcePath));
     }
@@ -101,7 +101,7 @@ public class Shotgun extends Player {
                     }
                 }
 
-                Bullet_Shotgun newBullet = new Bullet_Shotgun(x + 5*diameter / 12, y + 5*diameter / 12,
+                Bullet_Shotgun newBullet = new Bullet_Shotgun(x + 5*diameter / 12, y + 2*diameter / 5,
                         angle - Math.PI/8 +j* Math.PI/4 / (BULLETS_PER_SHOT-1) , this.enemy, this.numberShot, this);
                 if (numberShot < bullets.size()) {
                     bullets.set(numberShot, newBullet);

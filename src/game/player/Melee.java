@@ -9,10 +9,10 @@ import java.awt.event.KeyEvent;
  * Created by Angel on 22/06/2018.
  */
 public class Melee extends Player {
-    private static final int HEALTH_MELEE = 110;
-    private static final int DAMAGE_MELEE = 18;
-    private static final int SPEED_MELEE = 6;
-    private static final int SPEED_MELEE_BOOSTED = 10;
+    private static final int HEALTH_MELEE = 80;
+    private static final int DAMAGE_MELEE = 25;
+    private static final double SPEED_MELEE = 7;
+    private static final int SPEED_MELEE_BOOSTED = 15;
     private static final int DIAMETER_MELEE = 30;
 
     private static final int RECHARGE_TIME = 200;
@@ -69,7 +69,7 @@ public class Melee extends Player {
         Image image = getImageIcon().getImage();
 
 
-        g.drawImage(image, x, y, diameter, diameter, game);
+        g.drawImage(image, (int)x,(int) y, diameter, diameter, game);
 
         super.paintLifeBar(g);
         this.paintChargeBar(g);
@@ -115,7 +115,7 @@ public class Melee extends Player {
 
     }
 
-    public void assignVelocity(int vel) {
+    public void assignVelocity(double vel) {
 
         if (speedXNeg > 0)
             speedXNeg = vel;

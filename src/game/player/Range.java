@@ -13,7 +13,7 @@ public class Range extends Player {
 
     private static final double HEALTH_RANGE = 95;
     private static final double DAMAGE_RANGE = Shoot_Range.getDamage();
-    private static final int SPEED_RANGE = 6;
+    private static final int SPEED_RANGE = 7;
     protected static final int DIAMETER_RANGE = 60;
     private static final int RECHARGE_TIME = 20;
 
@@ -22,8 +22,8 @@ public class Range extends Player {
     private static final int X_RECHARGE_BAR = 40;
     private static final int Y_RECHARGE_BAR = Game.HEIGHT - 50 - HEIGHT_RECHARGE_BAR;
 
-    private int speedXShoot;
-    private int speedYShoot;
+    private double speedXShoot;
+    private double speedYShoot;
     private int recharge;
     private int numberShot;
 
@@ -50,7 +50,7 @@ public class Range extends Player {
     public void paint(Graphics2D g) {
 
         Image image = this.img.getImage();
-        g.drawImage(image, x, y, DIAMETER_RANGE, DIAMETER_RANGE, game);
+        g.drawImage(image, (int) x,(int)  y, DIAMETER_RANGE, DIAMETER_RANGE, game);
 
         for (int i = 0; i < shoots.size(); i++) {
             if (shoots.get(i) != null)
@@ -74,7 +74,7 @@ public class Range extends Player {
     private void paintChargeBar(Graphics2D g) {
         g.setColor(Color.BLACK);
         if (this.numPlayer == Number_of_player.PLAYER1) {
-            g.drawRect(X_RECHARGE_BAR, Y_RECHARGE_BAR, WIDTH_RECHARGE_BAR, HEIGHT_RECHARGE_BAR);
+            g.drawRect(X_RECHARGE_BAR , Y_RECHARGE_BAR, WIDTH_RECHARGE_BAR, HEIGHT_RECHARGE_BAR);
             g.fillRect(X_RECHARGE_BAR, Y_RECHARGE_BAR,
                     WIDTH_RECHARGE_BAR * recharge / RECHARGE_TIME, HEIGHT_RECHARGE_BAR);
         } else {

@@ -10,9 +10,9 @@ import java.awt.*;
  */
 public class Bullet_Shotgun {
 
-    private static final double DAMAGE_BULLET_SHOTGUN = 3.5;
+    private static final double DAMAGE_BULLET_SHOTGUN = 5;
     private static final double SPEED_BULLET_SHOTGUN = 11;
-    private static final int DIAMETER_BULLET_SHOTGUN = (int) (Shotgun.DIAMETER_SHOTGUN / 6);
+    private static final int DIAMETER_BULLET_SHOTGUN = (int) (Shotgun.DIAMETER_SHOTGUN / 5);
     private static final int TIME_BULLET = 25;
 
     private double x;
@@ -31,7 +31,7 @@ public class Bullet_Shotgun {
         this.time = 0;
         this.index = index;
         this.shotgun = shotgun;
-        this.img = new javax.swing.ImageIcon(getClass().getResource("/icon/Shoot.png"));
+        this.img = new javax.swing.ImageIcon(getClass().getResource("/icon/Bullet_Shotgun.png"));
         this.cos = Math.cos(angle);
         this.sin = Math.sin(angle);
         this.enemy = enemy;
