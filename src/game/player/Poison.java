@@ -169,4 +169,8 @@ public class Poison extends Player {
         if (!boosted)
             super.dealDamage(damage);
     }
+    public void dealDamageInv(int damage) {
+        if (!boosted)
+            super.dealDamageInv(damage);
+    }
 }
