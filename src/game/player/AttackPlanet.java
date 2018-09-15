@@ -5,7 +5,6 @@ import java.awt.*;
 /**
  * Created by Angel on 20/06/2018.
  */
-
 public class AttackPlanet {
 
     private static final double ANGULAR_SPEED_ATTACK_MELEE = 0.062;
@@ -18,14 +17,11 @@ public class AttackPlanet {
     private double angulo;
     private Player enemy;
 
-
     private Planet planet;
 
-    public AttackPlanet(Planet planet, Player enemy) {
+    public AttackPlanet(Planet planet) {
         this.planet = planet;
-        this.enemy = enemy;
         this.angulo = 0;
-
     }
 
     public void move() {
@@ -51,12 +47,12 @@ public class AttackPlanet {
         Rectangle[] rectangles1 = this.getBoundsArr();
         Rectangle[] rectangles2 = this.enemy.getBoundsArr();
 
-        for (int i = 0; i < rectangles1.length ; i++) {
-            for (int j = 0; j <rectangles2.length ; j++) {
-                if(rectangles1[i].intersects(rectangles2[j])){
-                        return true;
-                    }
+        for (int i = 0; i < rectangles1.length; i++) {
+            for (int j = 0; j < rectangles2.length; j++) {
+                if (rectangles1[i].intersects(rectangles2[j])) {
+                    return true;
                 }
+            }
         }
 
         return false;

@@ -29,21 +29,21 @@ public class Range extends Player {
 
     private ArrayList<Shoot_Range> shoots;
 
-    public Range(Number_of_player numPlayer, Player enemy, Game game) {
-        super(HEALTH_RANGE, DAMAGE_RANGE, SPEED_RANGE, game, numPlayer, enemy, DIAMETER_RANGE);
+    public Range(Number_of_player numPlayer, Game game) {
+        super(HEALTH_RANGE, DAMAGE_RANGE, SPEED_RANGE, game, numPlayer, DIAMETER_RANGE);
         this.recharge = 0;
         this.speedXShoot = this.speed;
         this.speedYShoot = 0;
         if (this.numPlayer == Number_of_player.PLAYER2) {
             this.speedXShoot = -this.speed;
         }
-        this.shoots = new ArrayList<Shoot_Range>(0);
+        this.shoots = new ArrayList<>(0);
         this.numberShot = 0;
         this.setImage(numPlayer);
     }
 
-    public Range(Number_of_player numPlayer, Player enemy) {
-        this(numPlayer, enemy, null);
+    public Range(Number_of_player numPlayer) {
+        this(numPlayer, null);
     }
 
     @Override

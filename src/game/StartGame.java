@@ -42,15 +42,15 @@ public class StartGame {
         Player player;
 
         if (selectedPlayerType == 0) {
-            player = new Planet(number_of_player, null);
+            player = new Planet(number_of_player);
         } else if (selectedPlayerType == 1) {
-            player = new Melee(number_of_player, null);
+            player = new Melee(number_of_player);
         } else if (selectedPlayerType == 2) {
-            player = new Range(number_of_player, null);
+            player = new Range(number_of_player);
         } else if(selectedPlayerType == 3){
-            player = new Poison(number_of_player, null);
+            player = new Poison(number_of_player);
         } else{
-            player = new Shotgun(number_of_player, null);
+            player = new Shotgun(number_of_player);
         }
 
         return player;

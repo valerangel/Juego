@@ -38,7 +38,7 @@ public abstract class Player {
     private static final int TIME_INVULNERABLE = 50;
 
 
-    public Player(double health, double damage, double speed, Game game, Number_of_player numPlayer, Player enemy, int diameter) {
+    public Player(double health, double damage, double speed, Game game, Number_of_player numPlayer, int diameter) {
         this.health = health;
         this.maxHealth = this.health;
         this.damage = damage;
@@ -46,12 +46,11 @@ public abstract class Player {
         this.numPlayer = numPlayer;
         this.game = game;
         this.diameter = diameter;
-        this.enemy = enemy;
         this.invulnerable = false;
         this.contInvulnerable = 0;
         this.poisoned = 0;
 
-        //Posición inicial
+        // Initial position.
         if (this.numPlayer == Number_of_player.PLAYER1) {
             x = 50;
             y = 200;
@@ -60,7 +59,7 @@ public abstract class Player {
             y = 200;
         }
 
-        //Velocidad
+        // Speed.
         speedXPos = 0;
         speedYPos = 0;
         speedXNeg = 0;

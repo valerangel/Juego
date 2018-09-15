@@ -11,7 +11,6 @@ import java.awt.*;
  */
 public abstract class Boost {
 
-
     protected int x;
     protected int y;
     protected int maxTime;
@@ -21,7 +20,6 @@ public abstract class Boost {
     protected int index;
 
     protected Game game;
-
 
     public Boost(int x, int y, int diameter, int maxTime, int index, String resourcePath, Game game) {
         this.x = x;
@@ -38,7 +36,7 @@ public abstract class Boost {
         g.drawImage(image, x, y, diameter, diameter, game);
     }
 
-    abstract public void colision(Player player);
+    abstract public void collision(Player player);
 
     abstract public void move(Player player1, Player player2);
 
