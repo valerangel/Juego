@@ -111,7 +111,7 @@ public class Game extends JPanel {
     }
 
     private void paintBackground(Graphics2D g2d){
-        ImageIcon img = new javax.swing.ImageIcon(getClass().getResource("/icon/BackGround.png"));;
+        ImageIcon img = new javax.swing.ImageIcon(getClass().getResource("/icon/Background.png"));
         Image image = img.getImage();
         g2d.drawImage(image, 0, 0, WIDTH, HEIGHT, this);
     }
