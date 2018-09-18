@@ -64,8 +64,6 @@ public class Bullet_Shotgun {
         if (collisionAttackPlanet()) {
             shotgun.eliminateThisBullet(index);
         }
-
-
     }
 
     private boolean collision() {
