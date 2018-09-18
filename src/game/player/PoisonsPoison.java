@@ -10,11 +10,11 @@ import java.awt.*;
  */
 public class PoisonsPoison {
 
-    public static final double DAMAGE_POISON = 0.35;
-    public static final int POISON_TIME = 30;
-    private static final int DIAMETER_POISON = (int) (Poison.DIAMETER_POISON / 2);
+    protected static final double DAMAGE_POISON = 0.35;
+    protected static final int POISON_TIME = 30;
+    private static final int DIAMETER_POISON = (Poison.DIAMETER_POISON / 2);
 
-    public static final int POISON_TIME_IN_SCREEN = 180;
+    private static final int POISON_TIME_IN_SCREEN = 180;
 
     private double x;
     private double y;
@@ -34,7 +34,6 @@ public class PoisonsPoison {
         this.img = new javax.swing.ImageIcon(getClass().getResource("/icon/PoisonsPoison.png"));
 
         this.enemy = enemy;
-
     }
 
     public static double getDamage() {
@@ -43,14 +42,14 @@ public class PoisonsPoison {
 
     public void paint(Graphics2D g, Game game) {
         Image image = this.img.getImage();
-        g.drawImage(image, (int) x,(int) y, DIAMETER_POISON, DIAMETER_POISON, game);
+        g.drawImage(image, (int) x, (int) y, DIAMETER_POISON, DIAMETER_POISON, game);
     }
 
     public void move() {
 
-        if(time>= POISON_TIME_IN_SCREEN ){
+        if (time >= POISON_TIME_IN_SCREEN) {
             poison.eliminateThisPoison(index);
-        } else{
+        } else {
             time++;
         }
 
@@ -58,7 +57,6 @@ public class PoisonsPoison {
             enemy.poisonPlayer();
             poison.eliminateThisPoison(index);
         }
-
     }
 
     private boolean collision() {
@@ -78,26 +76,14 @@ public class PoisonsPoison {
 
     public Rectangle[] getBoundsArr() {
         Rectangle[] rectangles = new Rectangle[4];
-        rectangles[0] = new Rectangle((int) x,(int)  y + DIAMETER_POISON / 3, DIAMETER_POISON, DIAMETER_POISON / 3);
+        rectangles[0] = new Rectangle((int) x, (int) y + DIAMETER_POISON / 3, DIAMETER_POISON, DIAMETER_POISON / 3);
         rectangles[1] = new Rectangle((int) x + DIAMETER_POISON / 12, (int) y + DIAMETER_POISON / 6,
                 5 * DIAMETER_POISON / 6, 2 * DIAMETER_POISON / 3);
         rectangles[2] = new Rectangle((int) x + DIAMETER_POISON / 6, (int) y + DIAMETER_POISON / 12,
                 2 * DIAMETER_POISON / 3, 5 * DIAMETER_POISON / 6);
-        rectangles[3] = new Rectangle((int) x + DIAMETER_POISON / 3,(int)  y, DIAMETER_POISON / 3, DIAMETER_POISON);
+        rectangles[3] = new Rectangle((int) x + DIAMETER_POISON / 3, (int) y, DIAMETER_POISON / 3, DIAMETER_POISON);
 
         return rectangles;
-    }
-
-    private boolean collisionAttackPlanet() {
-        if (this.enemy instanceof Planet) {
-
-            return ((Planet) this.enemy).getAttack().getBounds().intersects(getBounds());
-        }
-        return false;
-    }
-
-    public Rectangle getBounds() {
-        return new Rectangle((int) x, (int) y, DIAMETER_POISON, DIAMETER_POISON);
     }
 
 }

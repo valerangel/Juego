@@ -16,15 +16,14 @@ public class Boost_Heal extends Boost {
     private static final int HEALING = 25;
     private static final String RESOURCHE_PATH = "/icon/Heal.png";
 
-
     public Boost_Heal(int index, Game game) {
-        super((int) (Math.random() * (game.getWidth()- DIAMETER_HEAL)),
-                (int) (Math.random() * (game.getHeight()-DIAMETER_HEAL)) ,
+        super((int) (Math.random() * (game.getWidth() - DIAMETER_HEAL)),
+                (int) (Math.random() * (game.getHeight() - DIAMETER_HEAL)),
                 DIAMETER_HEAL, Boost_Heal.MAX_TIME, index, RESOURCHE_PATH, game);
     }
 
     @Override
-    public void colision(Player player) {
+    public void collision(Player player) {
         if (player.getBounds().intersects(getBounds())) {
             player.heal(HEALING);
             this.game.eliminateBoost(this.index);
@@ -33,8 +32,8 @@ public class Boost_Heal extends Boost {
 
     @Override
     public void move(Player player1, Player player2) {
-        this.colision(player1);
-        this.colision(player2);
+        this.collision(player1);
+        this.collision(player2);
     }
 
     @NotNull

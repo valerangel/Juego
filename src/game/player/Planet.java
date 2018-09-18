@@ -16,14 +16,14 @@ public class Planet extends Player {
 
     private AttackPlanet attackPlanet;
 
-    public Planet(Number_of_player numPlayer, Player enemy, Game game) {
-        super(HEALTH_PLANET, DAMAGE_PLANET, SPEED_PLANET, game, numPlayer, enemy, DIAMETER_PLANET);
-        this.attackPlanet = new AttackPlanet(this, this.enemy);
+    public Planet(Number_of_player numPlayer, Game game) {
+        super(HEALTH_PLANET, DAMAGE_PLANET, SPEED_PLANET, game, numPlayer, DIAMETER_PLANET);
+        this.attackPlanet = new AttackPlanet(this);
         this.setImage(numPlayer);
     }
 
-    public Planet(Number_of_player numPlayer, Player enemy) {
-        this(numPlayer, enemy, null);
+    public Planet(Number_of_player numPlayer) {
+        this(numPlayer, null);
     }
 
     @Override
@@ -56,11 +56,6 @@ public class Planet extends Player {
         super.setEnemy(enemy);
         this.attackPlanet.setEnemy(enemy);
     }
-
-    /*@Override
-    public Rectangle getBounds() {
-        return new Rectangle(x, y, diameter, diameter);
-    }*/
 
     public Rectangle[] getBoundsArr() {
         Rectangle[] rectangles = new Rectangle[4];

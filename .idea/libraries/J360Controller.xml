@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="J360Controller">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/J360Controller.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

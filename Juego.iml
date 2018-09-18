@@ -16,5 +16,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="J360Controller" level="project" />
+    <orderEntry type="library" name="lwjgl" level="project" />
   </component>
 </module>

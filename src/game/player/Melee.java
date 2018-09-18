@@ -9,6 +9,7 @@ import java.awt.event.KeyEvent;
  * Created by Angel on 22/06/2018.
  */
 public class Melee extends Player {
+
     private static final int HEALTH_MELEE = 80;
     private static final int DAMAGE_MELEE = 25;
     private static final double SPEED_MELEE = 7;
@@ -24,8 +25,8 @@ public class Melee extends Player {
     private int recharge;
     private boolean boosted;
 
-    public Melee(Number_of_player numPlayer, Player enemy, Game game) {
-        super(HEALTH_MELEE, DAMAGE_MELEE, SPEED_MELEE, game, numPlayer, enemy, DIAMETER_MELEE);
+    public Melee(Number_of_player numPlayer, Game game) {
+        super(HEALTH_MELEE, DAMAGE_MELEE, SPEED_MELEE, game, numPlayer, DIAMETER_MELEE);
         this.setImage(numPlayer);
         boosted = false;
     }
@@ -43,33 +44,30 @@ public class Melee extends Player {
     private void setImage() {
         String resourcePath;
         if (numPlayer == Number_of_player.PLAYER1) {
-            if(!boosted)
-            resourcePath = "/icon/Melee1.png";
-            else{
-
+            if (!boosted)
+                resourcePath = "/icon/Melee1.png";
+            else {
                 resourcePath = "/icon/Melee1Boosted.png";
             }
         } else {
-            if(!boosted)
+            if (!boosted)
                 resourcePath = "/icon/Melee2.png";
-            else{
-
+            else {
                 resourcePath = "/icon/Melee2Boosted.png";
             }
         }
         this.img = new javax.swing.ImageIcon(getClass().getResource(resourcePath));
     }
 
-    public Melee(Number_of_player numPlayer, Player enemy) {
-        this(numPlayer, enemy, null);
+    public Melee(Number_of_player numPlayer) {
+        this(numPlayer, null);
     }
 
     public void paint(Graphics2D g) {
         this.setImage();
         Image image = getImageIcon().getImage();
 
-
-        g.drawImage(image, (int)x,(int) y, diameter, diameter, game);
+        g.drawImage(image, (int) x, (int) y, diameter, diameter, game);
 
         super.paintLifeBar(g);
         this.paintChargeBar(g);
@@ -92,7 +90,7 @@ public class Melee extends Player {
     @Override
     public void move() {
 
-        if(recharge<=0) boosted = false;
+        if (recharge <= 0) boosted = false;
 
         if (boosted && (recharge > 0)) {
             recharge -= 7;
@@ -106,25 +104,27 @@ public class Melee extends Player {
             this.assignVelocity(SPEED_MELEE);
         }
 
-
         super.move();
 
         if (collision()) {
             enemy.dealDamageInv(Melee.DAMAGE_MELEE);
         }
-
     }
 
     public void assignVelocity(double vel) {
 
-        if (speedXNeg > 0)
+        if (speedXNeg > 0) {
             speedXNeg = vel;
-        if (speedXPos > 0)
+        }
+        if (speedXPos > 0) {
             speedXPos = vel;
-        if (speedYNeg > 0)
+        }
+        if (speedYNeg > 0) {
             speedYNeg = vel;
-        if (speedYPos > 0)
+        }
+        if (speedYPos > 0) {
             speedYPos = vel;
+        }
     }
 
     private boolean collision() {
@@ -144,16 +144,19 @@ public class Melee extends Player {
 
     public void keyReleased(KeyEvent e) {
         super.keyReleased(e);
-        if (e.getKeyCode() == KeyEvent.VK_T || e.getKeyCode() == KeyEvent.VK_NUMPAD5) {
+        if (isKeyPressed(e)) {
             this.boosted = false;
         }
     }
 
     public void keyPressed(KeyEvent e) {
         super.keyPressed(e);
-        if (e.getKeyCode() == KeyEvent.VK_T || e.getKeyCode() == KeyEvent.VK_NUMPAD5) {
+        if (isKeyPressed(e)) {
             this.boosted = true;
         }
+    }
 
+    private boolean isKeyPressed(KeyEvent e) {
+        return (e.getKeyCode() == KeyEvent.VK_T || e.getKeyCode() == KeyEvent.VK_NUMPAD5);
     }
 }

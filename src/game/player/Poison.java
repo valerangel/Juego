@@ -32,19 +32,19 @@ public class Poison extends Player {
 
     private ArrayList<PoisonsPoison> poisons;
 
-    public Poison(Number_of_player numPlayer, Player enemy, Game game) {
-        super(HEALTH_POISON, DAMAGE_POISON, SPEED_POISON, game, numPlayer, enemy, DIAMETER_POISON);
+    public Poison(Number_of_player numPlayer, Game game) {
+        super(HEALTH_POISON, DAMAGE_POISON, SPEED_POISON, game, numPlayer, DIAMETER_POISON);
         this.recharge = 0;
         this.boosted = false;
         this.rechargeBoost = 0;
-        this.poisons = new ArrayList<PoisonsPoison>(0);
+        this.poisons = new ArrayList<>(0);
         this.numberShot = 0;
         this.setImage(numPlayer, boosted);
         this.timeBoosted = 0;
     }
 
-    public Poison(Number_of_player numPlayer, Player enemy) {
-        this(numPlayer, enemy, null);
+    public Poison(Number_of_player numPlayer) {
+        this(numPlayer, null);
     }
 
     @Override
@@ -61,7 +61,6 @@ public class Poison extends Player {
         super.paintLifeBar(g);
         this.paintChargeBar(g);
     }
-
 
     private void paintChargeBar(Graphics2D g) {
         g.setColor(Color.BLACK);
@@ -169,6 +168,7 @@ public class Poison extends Player {
         if (!boosted)
             super.dealDamage(damage);
     }
+
     public void dealDamageInv(int damage) {
         if (!boosted)
             super.dealDamageInv(damage);

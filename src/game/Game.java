@@ -1,3 +1,4 @@
+
 package game;
 
 import game.boost.Boost_Heal;
@@ -16,7 +17,7 @@ public class Game extends JPanel {
 
     public static final int WIDTH = 1000;
     public static final int HEIGHT = 600;
-    public static final int TIME_FOR_BOOST = 1000;
+    private static final int TIME_FOR_BOOST = 1000;
 
     private Player player1;
     private Player player2;
@@ -24,13 +25,12 @@ public class Game extends JPanel {
     private int numBoost;
     private int countForBoost;
 
-
     public Game(Player player1, Player player2) {
 
         this.player1 = player1;
         this.player2 = player2;
 
-        this.boosts = new ArrayList<Boost>(0);
+        this.boosts = new ArrayList<>(0);
         this.numBoost = 0;
         this.countForBoost = 0;
 
@@ -42,16 +42,10 @@ public class Game extends JPanel {
 
             @Override
             public void keyReleased(KeyEvent e) {
-                if ((e.getKeyCode() == KeyEvent.VK_LEFT) || (e.getKeyCode() == KeyEvent.VK_RIGHT) ||
-                        (e.getKeyCode() == KeyEvent.VK_UP) || (e.getKeyCode() == KeyEvent.VK_DOWN) ||
-                        (e.getKeyCode() == KeyEvent.VK_NUMPAD5) || (e.getKeyCode() == KeyEvent.VK_NUMPAD3) ||
-                        (e.getKeyCode() == KeyEvent.VK_NUMPAD2) || (e.getKeyCode() == KeyEvent.VK_NUMPAD1) ) {
+                if (player1Keys(e) ) {
                     player1.keyReleased(e);
                 }
-                if (e.getKeyCode() == KeyEvent.VK_W || e.getKeyCode() == KeyEvent.VK_A ||
-                        e.getKeyCode() == KeyEvent.VK_S || e.getKeyCode() == KeyEvent.VK_D ||
-                        e.getKeyCode() == KeyEvent.VK_F || e.getKeyCode() == KeyEvent.VK_G ||
-                        e.getKeyCode() == KeyEvent.VK_H || e.getKeyCode() == KeyEvent.VK_T ) {
+                if (player2Keys(e)) {
                     player2.keyReleased(e);
                 }
 
@@ -59,21 +53,29 @@ public class Game extends JPanel {
 
             @Override
             public void keyPressed(KeyEvent e) {
-                if ((e.getKeyCode() == KeyEvent.VK_LEFT) || (e.getKeyCode() == KeyEvent.VK_RIGHT) ||
-                        (e.getKeyCode() == KeyEvent.VK_UP) || (e.getKeyCode() == KeyEvent.VK_DOWN) ||
-                        (e.getKeyCode() == KeyEvent.VK_NUMPAD5) || (e.getKeyCode() == KeyEvent.VK_NUMPAD3) ||
-                        (e.getKeyCode() == KeyEvent.VK_NUMPAD2) || (e.getKeyCode() == KeyEvent.VK_NUMPAD1)) {
+                if (player1Keys(e)) {
                     player1.keyPressed(e);
                 }
-                if (e.getKeyCode() == KeyEvent.VK_W || e.getKeyCode() == KeyEvent.VK_A ||
-                        e.getKeyCode() == KeyEvent.VK_S || e.getKeyCode() == KeyEvent.VK_D ||
-                        e.getKeyCode() == KeyEvent.VK_F || e.getKeyCode() == KeyEvent.VK_G ||
-                        e.getKeyCode() == KeyEvent.VK_H || e.getKeyCode() == KeyEvent.VK_T) {
+                if (player2Keys(e)) {
                     player2.keyPressed(e);
                 }
             }
         });
         setFocusable(true);
+    }
+
+    private boolean player1Keys(KeyEvent e) {
+        return ((e.getKeyCode() == KeyEvent.VK_LEFT) || (e.getKeyCode() == KeyEvent.VK_RIGHT) ||
+                (e.getKeyCode() == KeyEvent.VK_UP) || (e.getKeyCode() == KeyEvent.VK_DOWN) ||
+                (e.getKeyCode() == KeyEvent.VK_NUMPAD5) || (e.getKeyCode() == KeyEvent.VK_NUMPAD3) ||
+                (e.getKeyCode() == KeyEvent.VK_NUMPAD2) || (e.getKeyCode() == KeyEvent.VK_NUMPAD1));
+    }
+
+    private boolean player2Keys(KeyEvent e) {
+        return e.getKeyCode() == KeyEvent.VK_W || e.getKeyCode() == KeyEvent.VK_A ||
+                e.getKeyCode() == KeyEvent.VK_S || e.getKeyCode() == KeyEvent.VK_D ||
+                e.getKeyCode() == KeyEvent.VK_F || e.getKeyCode() == KeyEvent.VK_G ||
+                e.getKeyCode() == KeyEvent.VK_H || e.getKeyCode() == KeyEvent.VK_T;
     }
 
     public void move() {
@@ -111,14 +113,15 @@ public class Game extends JPanel {
     }
 
     private void paintBackground(Graphics2D g2d){
-        ImageIcon img = new javax.swing.ImageIcon(getClass().getResource("/icon/BackGround.png"));;
+        ImageIcon img = new javax.swing.ImageIcon(getClass().getResource("/icon/Background.png"));
         Image image = img.getImage();
         g2d.drawImage(image, 0, 0, WIDTH, HEIGHT, this);
     }
 
     public void gameOver(Number_of_player winner) {
-        JOptionPane.showMessageDialog(this, "Game Over. El jugador " +
-                Number_of_player.getNumero(winner) + " ha ganado.", "Game Over", JOptionPane.YES_NO_OPTION);
+        JOptionPane.showMessageDialog(this,
+                "Game Over. El jugador " + Number_of_player.getNumber(winner) + " ha ganado.",
+                "Game Over", JOptionPane.INFORMATION_MESSAGE);
         System.exit(ABORT);
     }
 

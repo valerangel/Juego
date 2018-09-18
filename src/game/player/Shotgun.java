@@ -31,25 +31,25 @@ public class Shotgun extends Player {
 
     private ArrayList<Bullet_Shotgun> bullets;
 
-    public Shotgun(Number_of_player numPlayer, Player enemy, Game game) {
-        super(HEALTH_SHOTGUN, DAMAGE_SHOTGUN, SPEED_SHOTGUN, game, numPlayer, enemy, DIAMETER_SHOTGUN);
+    public Shotgun(Number_of_player numPlayer, Game game) {
+        super(HEALTH_SHOTGUN, DAMAGE_SHOTGUN, SPEED_SHOTGUN, game, numPlayer, DIAMETER_SHOTGUN);
         this.recharge = 0;
         this.angle = 0;
         this.shooting = false;
-        this.bullets = new ArrayList<Bullet_Shotgun>(0);
+        this.bullets = new ArrayList<>(0);
         this.numberShot = 0;
         this.setImage(numPlayer);
     }
 
-    public Shotgun(Number_of_player numPlayer, Player enemy) {
-        this(numPlayer, enemy, null);
+    public Shotgun(Number_of_player numPlayer) {
+        this(numPlayer, null);
     }
 
     @Override
     public void paint(Graphics2D g) {
 
         Image image = this.img.getImage();
-        g.drawImage(image, (int)x,(int) y, DIAMETER_SHOTGUN, DIAMETER_SHOTGUN, game);
+        g.drawImage(image, (int) x, (int) y, DIAMETER_SHOTGUN, DIAMETER_SHOTGUN, game);
 
         for (int i = 0; i < bullets.size(); i++) {
             if (bullets.get(i) != null)
@@ -101,20 +101,19 @@ public class Shotgun extends Player {
                     }
                 }
 
-                Bullet_Shotgun newBullet = new Bullet_Shotgun(x + 5*diameter / 12, y + 2*diameter / 5,
-                        angle - Math.PI/8 +j* Math.PI/4 / (BULLETS_PER_SHOT-1) , this.enemy, this.numberShot, this);
+                Bullet_Shotgun newBullet = new Bullet_Shotgun(x + 5 * diameter / 12, y + 2 * diameter / 5,
+                        angle - Math.PI / 8 + j * Math.PI / 4 / (BULLETS_PER_SHOT - 1), this.enemy, this.numberShot, this);
                 if (numberShot < bullets.size()) {
                     bullets.set(numberShot, newBullet);
                 } else {
                     bullets.add(numberShot, newBullet);
                 }
             }
-
         }
 
-        for (int i = 0; i < bullets.size(); i++) {
-            if (bullets.get(i) != null)
-                bullets.get(i).move();
+        for (Bullet_Shotgun bullet : bullets) {
+            if (bullet != null)
+                bullet.move();
         }
         shooting = false;
     }
@@ -123,11 +122,10 @@ public class Shotgun extends Player {
         this.bullets.set(index, null);
     }
 
-
     public void keyPressed(KeyEvent e) {
         super.keyPressed(e);
         if (e.getKeyCode() == KeyEvent.VK_F || e.getKeyCode() == KeyEvent.VK_NUMPAD1) {
-            angle =  Math.PI;
+            angle = Math.PI;
             shooting = true;
         }
         if (e.getKeyCode() == KeyEvent.VK_H || e.getKeyCode() == KeyEvent.VK_NUMPAD3) {

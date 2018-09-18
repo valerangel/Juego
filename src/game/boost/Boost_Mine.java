@@ -16,15 +16,14 @@ public class Boost_Mine extends Boost {
     private static final int DAMAGE = 18;
     private static final String RESOURCHE_PATH = "/icon/Mine.png";
 
-
     public Boost_Mine(int index, Game game) {
-        super((int) (Math.random() * (game.getWidth()- DIAMETER_MINE)),
-                (int) (Math.random() * (game.getHeight()- DIAMETER_MINE)) ,
+        super((int) (Math.random() * (game.getWidth() - DIAMETER_MINE)),
+                (int) (Math.random() * (game.getHeight() - DIAMETER_MINE)),
                 DIAMETER_MINE, Boost_Mine.MAX_TIME, index, RESOURCHE_PATH, game);
     }
 
     @Override
-    public void colision(Player player) {
+    public void collision(Player player) {
         Rectangle[] rectangles1 = this.getBoundsArr();
         Rectangle[] rectangles2 = player.getBoundsArr();
 
@@ -45,8 +44,8 @@ public class Boost_Mine extends Boost {
 
     @Override
     public void move(Player player1, Player player2) {
-        this.colision(player1);
-        this.colision(player2);
+        this.collision(player1);
+        this.collision(player2);
     }
 
     @NotNull
