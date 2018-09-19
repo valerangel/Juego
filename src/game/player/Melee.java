@@ -25,15 +25,15 @@ public class Melee extends Player {
     private int recharge;
     private boolean boosted;
 
-    public Melee(Number_of_player numPlayer, Game game) {
+    public Melee(PlayerNumber numPlayer, Game game) {
         super(HEALTH_MELEE, DAMAGE_MELEE, SPEED_MELEE, game, numPlayer, DIAMETER_MELEE);
         this.setImage(numPlayer);
         boosted = false;
     }
 
-    private void setImage(Number_of_player numPlayer) {
+    private void setImage(PlayerNumber numPlayer) {
         String resourcePath;
-        if (numPlayer == Number_of_player.PLAYER1) {
+        if (numPlayer == PlayerNumber.PLAYER1) {
             resourcePath = "/icon/Melee1.png";
         } else {
             resourcePath = "/icon/Melee2.png";
@@ -43,7 +43,7 @@ public class Melee extends Player {
 
     private void setImage() {
         String resourcePath;
-        if (numPlayer == Number_of_player.PLAYER1) {
+        if (numPlayer == PlayerNumber.PLAYER1) {
             if (!boosted)
                 resourcePath = "/icon/Melee1.png";
             else {
@@ -59,7 +59,7 @@ public class Melee extends Player {
         this.img = new javax.swing.ImageIcon(getClass().getResource(resourcePath));
     }
 
-    public Melee(Number_of_player numPlayer) {
+    public Melee(PlayerNumber numPlayer) {
         this(numPlayer, null);
     }
 
@@ -75,7 +75,7 @@ public class Melee extends Player {
 
     private void paintChargeBar(Graphics2D g) {
         g.setColor(Color.BLACK);
-        if (this.numPlayer == Number_of_player.PLAYER1) {
+        if (this.numPlayer == PlayerNumber.PLAYER1) {
             g.drawRect(X_RECHARGE_BAR, Y_RECHARGE_BAR, WIDTH_RECHARGE_BAR, HEIGHT_RECHARGE_BAR);
             g.fillRect(X_RECHARGE_BAR, Y_RECHARGE_BAR,
                     WIDTH_RECHARGE_BAR * recharge / RECHARGE_TIME, HEIGHT_RECHARGE_BAR);

@@ -25,8 +25,8 @@ public class StartGame {
         int select1 = showJOptionPane(titleOptionPanePlayer1);
         int select2 = showJOptionPane(titleOptionPanePlayer2);
 
-        player1 = setPlayerType(select1, Number_of_player.PLAYER1);
-        player2 = setPlayerType(select2, Number_of_player.PLAYER2);
+        player1 = setPlayerType(select1, PlayerNumber.PLAYER1);
+        player2 = setPlayerType(select2, PlayerNumber.PLAYER2);
 
         player1.setEnemy(player2);
         player2.setEnemy(player1);
@@ -37,7 +37,7 @@ public class StartGame {
                 "Select", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, pJAvailable, pJAvailable[0]);
     }
 
-    private Player setPlayerType(int selectedPlayerType, Number_of_player number_of_player) {
+    private Player setPlayerType(int selectedPlayerType, PlayerNumber number_of_player) {
 
         Player player;
 

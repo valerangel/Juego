@@ -29,12 +29,12 @@ public class Range extends Player {
 
     private ArrayList<Shoot_Range> shoots;
 
-    public Range(Number_of_player numPlayer, Game game) {
+    public Range(PlayerNumber numPlayer, Game game) {
         super(HEALTH_RANGE, DAMAGE_RANGE, SPEED_RANGE, game, numPlayer, DIAMETER_RANGE);
         this.recharge = 0;
         this.speedXShoot = this.speed;
         this.speedYShoot = 0;
-        if (this.numPlayer == Number_of_player.PLAYER2) {
+        if (this.numPlayer == PlayerNumber.PLAYER2) {
             this.speedXShoot = -this.speed;
         }
         this.shoots = new ArrayList<>(0);
@@ -42,7 +42,7 @@ public class Range extends Player {
         this.setImage(numPlayer);
     }
 
-    public Range(Number_of_player numPlayer) {
+    public Range(PlayerNumber numPlayer) {
         this(numPlayer, null);
     }
 
@@ -61,9 +61,9 @@ public class Range extends Player {
         this.paintChargeBar(g);
     }
 
-    private void setImage(Number_of_player numPlayer) {
+    private void setImage(PlayerNumber numPlayer) {
         String resourcePath;
-        if (numPlayer == Number_of_player.PLAYER1) {
+        if (numPlayer == PlayerNumber.PLAYER1) {
             resourcePath = "/icon/Range1.png";
         } else {
             resourcePath = "/icon/Range2.png";
@@ -73,7 +73,7 @@ public class Range extends Player {
 
     private void paintChargeBar(Graphics2D g) {
         g.setColor(Color.BLACK);
-        if (this.numPlayer == Number_of_player.PLAYER1) {
+        if (this.numPlayer == PlayerNumber.PLAYER1) {
             g.drawRect(X_RECHARGE_BAR , Y_RECHARGE_BAR, WIDTH_RECHARGE_BAR, HEIGHT_RECHARGE_BAR);
             g.fillRect(X_RECHARGE_BAR, Y_RECHARGE_BAR,
                     WIDTH_RECHARGE_BAR * recharge / RECHARGE_TIME, HEIGHT_RECHARGE_BAR);

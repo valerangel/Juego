@@ -16,7 +16,7 @@ public abstract class Player {
     protected double maxHealth;
     protected double damage;
     protected double speed;
-    protected Number_of_player numPlayer;
+    protected PlayerNumber numPlayer;
     protected Player enemy;
     protected Game game;
     protected ImageIcon img;
@@ -38,7 +38,7 @@ public abstract class Player {
     private static final int TIME_INVULNERABLE = 50;
 
 
-    public Player(double health, double damage, double speed, Game game, Number_of_player numPlayer, int diameter) {
+    public Player(double health, double damage, double speed, Game game, PlayerNumber numPlayer, int diameter) {
         this.health = health;
         this.maxHealth = this.health;
         this.damage = damage;
@@ -51,7 +51,7 @@ public abstract class Player {
         this.poisoned = 0;
 
         // Initial position.
-        if (this.numPlayer == Number_of_player.PLAYER1) {
+        if (this.numPlayer == PlayerNumber.PLAYER1) {
             x = 50;
             y = 200;
         } else {
@@ -178,7 +178,7 @@ public abstract class Player {
         }
     }
 
-    public Number_of_player getNumPlayer() {
+    public PlayerNumber getNumPlayer() {
         return this.numPlayer;
     }
 
@@ -188,7 +188,7 @@ public abstract class Player {
 
     protected void paintLifeBar(Graphics2D g) {
         g.setColor(Color.black);
-        if (this.numPlayer == Number_of_player.PLAYER1) {
+        if (this.numPlayer == PlayerNumber.PLAYER1) {
             g.drawRect(X_LIFE_BAR, Y_LIFE_BAR, WIDTH_LIFE_BAR, HEIGHT_LIFE_BAR);
             g.setColor(Color.red);
             if (this.health >= 0.4 * this.getMaxHealth()) {

@@ -31,7 +31,7 @@ public class Shotgun extends Player {
 
     private ArrayList<Bullet_Shotgun> bullets;
 
-    public Shotgun(Number_of_player numPlayer, Game game) {
+    public Shotgun(PlayerNumber numPlayer, Game game) {
         super(HEALTH_SHOTGUN, DAMAGE_SHOTGUN, SPEED_SHOTGUN, game, numPlayer, DIAMETER_SHOTGUN);
         this.recharge = 0;
         this.angle = 0;
@@ -41,7 +41,7 @@ public class Shotgun extends Player {
         this.setImage(numPlayer);
     }
 
-    public Shotgun(Number_of_player numPlayer) {
+    public Shotgun(PlayerNumber numPlayer) {
         this(numPlayer, null);
     }
 
@@ -60,9 +60,9 @@ public class Shotgun extends Player {
         this.paintChargeBar(g);
     }
 
-    private void setImage(Number_of_player numPlayer) {
+    private void setImage(PlayerNumber numPlayer) {
         String resourcePath;
-        if (numPlayer == Number_of_player.PLAYER1) {
+        if (numPlayer == PlayerNumber.PLAYER1) {
             resourcePath = "/icon/Shotgun1.png";
         } else {
             resourcePath = "/icon/Shotgun2.png";
@@ -72,7 +72,7 @@ public class Shotgun extends Player {
 
     private void paintChargeBar(Graphics2D g) {
         g.setColor(Color.BLACK);
-        if (this.numPlayer == Number_of_player.PLAYER1) {
+        if (this.numPlayer == PlayerNumber.PLAYER1) {
             g.drawRect(X_RECHARGE_BAR, Y_RECHARGE_BAR, WIDTH_RECHARGE_BAR, HEIGHT_RECHARGE_BAR);
             g.fillRect(X_RECHARGE_BAR, Y_RECHARGE_BAR,
                     WIDTH_RECHARGE_BAR * recharge / RECHARGE_SHOTGUN, HEIGHT_RECHARGE_BAR);
