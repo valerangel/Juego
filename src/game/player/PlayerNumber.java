@@ -10,8 +10,7 @@ public enum PlayerNumber {
     public static int getNumber(PlayerNumber player) {
         if (player == PlayerNumber.PLAYER1) {
             return 1;
-        } else {
-            return 2;
         }
+        return 2;
     }
 }
