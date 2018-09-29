@@ -47,9 +47,9 @@ public class StartGame {
             player = new Melee(number_of_player);
         } else if (selectedPlayerType == 2) {
             player = new Range(number_of_player);
-        } else if(selectedPlayerType == 3){
+        } else if (selectedPlayerType == 3) {
             player = new Poison(number_of_player);
-        } else{
+        } else {
             player = new Shotgun(number_of_player);
         }
 
@@ -58,12 +58,30 @@ public class StartGame {
 
     private void generateJFrame() {
         JFrame frame = new JFrame("My game");
+        JMenuBar menuBar = createMenuBar();
+        frame.setJMenuBar(menuBar);
         game = new Game(player1, player2);
         frame.add(game);
         frame.setSize(Game.WIDTH, Game.HEIGHT);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
+    }
+
+    private JMenuBar createMenuBar() {
+        JMenuBar menuBar = new JMenuBar();
+        JMenu menuAbout = new JMenu("About");
+        JMenuItem itemAbout = new JMenuItem("About");
+        itemAbout.addActionListener(actionListener ->
+                JOptionPane.showMessageDialog(null,
+                        "About menu item clicked.",
+                        "Title",
+                        JOptionPane.INFORMATION_MESSAGE));
+
+        menuAbout.add(itemAbout);
+        menuBar.add(menuAbout);
+
+        return menuBar;
     }
 
     private void addPlayersToGame() {
