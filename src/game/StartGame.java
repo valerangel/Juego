@@ -25,8 +25,8 @@ public class StartGame {
         int select1 = showJOptionPane(titleOptionPanePlayer1);
         int select2 = showJOptionPane(titleOptionPanePlayer2);
 
-        player1 = setPlayerType(select1, Number_of_player.PLAYER1);
-        player2 = setPlayerType(select2, Number_of_player.PLAYER2);
+        player1 = setPlayerType(select1, PlayerNumber.PLAYER1);
+        player2 = setPlayerType(select2, PlayerNumber.PLAYER2);
 
         player1.setEnemy(player2);
         player2.setEnemy(player1);
@@ -37,7 +37,7 @@ public class StartGame {
                 "Select", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, pJAvailable, pJAvailable[0]);
     }
 
-    private Player setPlayerType(int selectedPlayerType, Number_of_player number_of_player) {
+    private Player setPlayerType(int selectedPlayerType, PlayerNumber number_of_player) {
 
         Player player;
 
@@ -47,9 +47,9 @@ public class StartGame {
             player = new Melee(number_of_player);
         } else if (selectedPlayerType == 2) {
             player = new Range(number_of_player);
-        } else if(selectedPlayerType == 3){
+        } else if (selectedPlayerType == 3) {
             player = new Poison(number_of_player);
-        } else{
+        } else {
             player = new Shotgun(number_of_player);
         }
 
@@ -58,12 +58,30 @@ public class StartGame {
 
     private void generateJFrame() {
         JFrame frame = new JFrame("My game");
+        JMenuBar menuBar = createMenuBar();
+        frame.setJMenuBar(menuBar);
         game = new Game(player1, player2);
         frame.add(game);
         frame.setSize(Game.WIDTH, Game.HEIGHT);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
+    }
+
+    private JMenuBar createMenuBar() {
+        JMenuBar menuBar = new JMenuBar();
+        JMenu menuAbout = new JMenu("About");
+        JMenuItem itemAbout = new JMenuItem("About");
+        itemAbout.addActionListener(actionListener ->
+                JOptionPane.showMessageDialog(null,
+                        "About menu item clicked.",
+                        "Title",
+                        JOptionPane.INFORMATION_MESSAGE));
+
+        menuAbout.add(itemAbout);
+        menuBar.add(menuAbout);
+
+        return menuBar;
     }
 
     private void addPlayersToGame() {

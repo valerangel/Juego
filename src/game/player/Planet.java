@@ -16,13 +16,13 @@ public class Planet extends Player {
 
     private AttackPlanet attackPlanet;
 
-    public Planet(Number_of_player numPlayer, Game game) {
+    public Planet(PlayerNumber numPlayer, Game game) {
         super(HEALTH_PLANET, DAMAGE_PLANET, SPEED_PLANET, game, numPlayer, DIAMETER_PLANET);
         this.attackPlanet = new AttackPlanet(this);
         this.setImage(numPlayer);
     }
 
-    public Planet(Number_of_player numPlayer) {
+    public Planet(PlayerNumber numPlayer) {
         this(numPlayer, null);
     }
 
@@ -32,9 +32,9 @@ public class Planet extends Player {
         this.attackPlanet.move();
     }
 
-    private void setImage(Number_of_player numPlayer) {
+    private void setImage(PlayerNumber numPlayer) {
         String resourcePath;
-        if (numPlayer == Number_of_player.PLAYER1) {
+        if (numPlayer == PlayerNumber.PLAYER1) {
             resourcePath = "/icon/Planet1.png";
         } else {
             resourcePath = "/icon/Planet2.png";

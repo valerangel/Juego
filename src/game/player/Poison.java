@@ -32,7 +32,7 @@ public class Poison extends Player {
 
     private ArrayList<PoisonsPoison> poisons;
 
-    public Poison(Number_of_player numPlayer, Game game) {
+    public Poison(PlayerNumber numPlayer, Game game) {
         super(HEALTH_POISON, DAMAGE_POISON, SPEED_POISON, game, numPlayer, DIAMETER_POISON);
         this.recharge = 0;
         this.boosted = false;
@@ -43,7 +43,7 @@ public class Poison extends Player {
         this.timeBoosted = 0;
     }
 
-    public Poison(Number_of_player numPlayer) {
+    public Poison(PlayerNumber numPlayer) {
         this(numPlayer, null);
     }
 
@@ -64,7 +64,7 @@ public class Poison extends Player {
 
     private void paintChargeBar(Graphics2D g) {
         g.setColor(Color.BLACK);
-        if (this.numPlayer == Number_of_player.PLAYER1) {
+        if (this.numPlayer == PlayerNumber.PLAYER1) {
             g.drawRect(X_RECHARGE_BAR, Y_RECHARGE_BAR, WIDTH_RECHARGE_BAR, HEIGHT_RECHARGE_BAR);
             if (!boosted) {
                 g.fillRect(X_RECHARGE_BAR, Y_RECHARGE_BAR,
@@ -88,16 +88,16 @@ public class Poison extends Player {
         }
     }
 
-    private void setImage(Number_of_player numPlayer, boolean boost) {
+    private void setImage(PlayerNumber numPlayer, boolean boost) {
         String resourcePath;
         if (!boost) {
-            if (numPlayer == Number_of_player.PLAYER1) {
+            if (numPlayer == PlayerNumber.PLAYER1) {
                 resourcePath = "/icon/Poison1.png";
             } else {
                 resourcePath = "/icon/Poison2.png";
             }
         } else {
-            if (numPlayer == Number_of_player.PLAYER1) {
+            if (numPlayer == PlayerNumber.PLAYER1) {
                 resourcePath = "/icon/Poison1Boosted.png";
             } else {
                 resourcePath = "/icon/Poison2Boosted.png";

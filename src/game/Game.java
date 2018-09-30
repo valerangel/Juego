@@ -3,7 +3,7 @@ package game;
 
 import game.boost.Boost_Heal;
 import game.boost.Boost_Mine;
-import game.player.Number_of_player;
+import game.player.PlayerNumber;
 import game.player.Player;
 import game.boost.Boost;
 
@@ -118,9 +118,9 @@ public class Game extends JPanel {
         g2d.drawImage(image, 0, 0, WIDTH, HEIGHT, this);
     }
 
-    public void gameOver(Number_of_player winner) {
+    public void gameOver(PlayerNumber winner) {
         JOptionPane.showMessageDialog(this,
-                "Game Over. El jugador " + Number_of_player.getNumber(winner) + " ha ganado.",
+                "Game Over. El jugador " + PlayerNumber.getNumber(winner) + " ha ganado.",
                 "Game Over", JOptionPane.INFORMATION_MESSAGE);
         System.exit(ABORT);
     }

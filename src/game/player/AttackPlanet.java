@@ -27,7 +27,7 @@ public class AttackPlanet {
     public void move() {
         a = (int) (this.planet.getX() + (this.planet.getDiameter() - this.DIAM) / 2 + DISTANCE * Math.cos(angulo));
         b = (int) (this.planet.getY() + (this.planet.getDiameter() - this.DIAM) / 2 + DISTANCE * Math.sin(angulo));
-        if (planet.getNumPlayer() == Number_of_player.PLAYER1) {
+        if (planet.getNumPlayer() == PlayerNumber.PLAYER1) {
             angulo = angulo + ANGULAR_SPEED_ATTACK_MELEE;
         } else {
             angulo = angulo - ANGULAR_SPEED_ATTACK_MELEE;
