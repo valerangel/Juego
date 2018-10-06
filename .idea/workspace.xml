@@ -7,18 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c39f8791-fe52-48bd-9b67-e2008a145d0d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POO-Sesión-6.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POO-Sesión-7.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POO-Sesión-8.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/POO-Sesión-9.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/amanita-muscaria-159452_1280.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/poison-1481596_1280.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/poison-576608_1280.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/icon/spider-1772769_1280.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/StatusGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/Game.java" afterPath="$PROJECT_DIR$/src/game/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/StartGame.java" afterPath="$PROJECT_DIR$/src/game/StartGame.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +30,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="169">
-              <caret line="277" column="13" lean-forward="true" selection-start-line="277" selection-start-column="13" selection-end-line="277" selection-end-column="13" />
+              <caret line="277" column="13" lean-forward="false" selection-start-line="277" selection-start-column="13" selection-end-line="277" selection-end-column="13" />
               <folding>
                 <element signature="method#Game#0;class#Game#0" expanded="false" />
                 <element signature="method#player2Keys#0;class#Game#0" expanded="false" />
@@ -56,6 +46,16 @@
                 <element signature="method#addPlayersToGame#0;class#Game#0" expanded="false" />
                 <marker date="1538821719599" expanded="false" signature="6028:6162" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
-              <caret line="201" column="128" lean-forward="true" selection-start-line="200" selection-start-column="20" selection-end-line="201" selection-end-column="128" />
+              <caret line="201" column="128" lean-forward="false" selection-start-line="200" selection-start-column="20" selection-end-line="201" selection-end-column="128" />
               <folding>
                 <element signature="docComment;class#Player#0" expanded="false" />
                 <element signature="method#Player#0;class#Player#0" expanded="false" />
@@ -179,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/game/StatusGame.java" />
         <option value="$PROJECT_DIR$/src/game/StartGame.java" />
         <option value="$PROJECT_DIR$/src/game/Game.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -782,7 +783,7 @@
       <workItem from="1534929289397" duration="1931000" />
       <workItem from="1535813639066" duration="24000" />
       <workItem from="1538298445274" duration="2214000" />
-      <workItem from="1538815774829" duration="5896000" />
+      <workItem from="1538815774829" duration="6073000" />
     </task>
     <task id="LOCAL-00001" summary="Probando esto a ver">
       <created>1529521666950</created>
@@ -889,11 +890,25 @@
       <option name="project" value="LOCAL" />
       <updated>1534867929424</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added a menu for selecting players before the game starts.">
+      <created>1538821809826</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1538821809826</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added a menu for selecting players before the game starts.">
+      <created>1538821875999</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1538821875999</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119852000" />
+    <option name="totallyTimeSpent" value="120029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -981,7 +996,8 @@
     <MESSAGE value="Added new player called Shotgun and Bullet_Shotgun" />
     <MESSAGE value="Added a boost to Poison" />
     <MESSAGE value="Controls updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controls updated" />
+    <MESSAGE value="Added a menu for selecting players before the game starts." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a menu for selecting players before the game starts." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -994,7 +1010,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Game2.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Ball.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Game.java" />
@@ -1276,7 +1291,7 @@
     <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="201" column="128" lean-forward="true" selection-start-line="200" selection-start-column="20" selection-end-line="201" selection-end-column="128" />
+          <caret line="201" column="128" lean-forward="false" selection-start-line="200" selection-start-column="20" selection-end-line="201" selection-end-column="128" />
           <folding>
             <element signature="docComment;class#Player#0" expanded="false" />
             <element signature="method#Player#0;class#Player#0" expanded="false" />
@@ -1311,7 +1326,7 @@
     <entry file="file://$PROJECT_DIR$/src/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
-          <caret line="277" column="13" lean-forward="true" selection-start-line="277" selection-start-column="13" selection-end-line="277" selection-end-column="13" />
+          <caret line="277" column="13" lean-forward="false" selection-start-line="277" selection-start-column="13" selection-end-line="277" selection-end-column="13" />
           <folding>
             <element signature="method#Game#0;class#Game#0" expanded="false" />
             <element signature="method#player2Keys#0;class#Game#0" expanded="false" />
@@ -1323,6 +1338,14 @@
             <element signature="method#addPlayersToGame#0;class#Game#0" expanded="false" />
             <marker date="1538821719599" expanded="false" signature="6028:6162" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
