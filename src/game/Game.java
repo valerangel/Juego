@@ -28,8 +28,6 @@ public class Game extends JPanel {
     private int select1, select2;
     private boolean select1Done, select2Done;
 
-    private final String titleOptionPanePlayer1 = "PLAYER 1. SELECT CHARACTER";
-    private final String titleOptionPanePlayer2 = "PLAYER 2. SELECT CHARACTER";
     private final String[] pJAvailable = {"Planet", "Melee", "Range", "Poison", "Shotgun"};
 
     public Game(Player player1, Player player2) {
