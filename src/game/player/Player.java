@@ -67,6 +67,8 @@ public abstract class Player {
     }
 
     public void move() {
+
+        //Those 4 ifs controls the playe so it cant go out of the frame.
         if (x + speedXPos - speedXNeg < 0)
             speedXNeg = 0;
         if (x + speedXPos - speedXNeg > game.getWidth() - diameter)

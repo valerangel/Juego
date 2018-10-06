@@ -90,17 +90,17 @@ public class Game extends JPanel {
     }
 
     private boolean player1Keys(KeyEvent e) {
-        return ((e.getKeyCode() == KeyEvent.VK_LEFT) || (e.getKeyCode() == KeyEvent.VK_RIGHT) ||
-                (e.getKeyCode() == KeyEvent.VK_UP) || (e.getKeyCode() == KeyEvent.VK_DOWN) ||
-                (e.getKeyCode() == KeyEvent.VK_NUMPAD5) || (e.getKeyCode() == KeyEvent.VK_NUMPAD3) ||
-                (e.getKeyCode() == KeyEvent.VK_NUMPAD2) || (e.getKeyCode() == KeyEvent.VK_NUMPAD1));
-    }
-
-    private boolean player2Keys(KeyEvent e) {
         return e.getKeyCode() == KeyEvent.VK_W || e.getKeyCode() == KeyEvent.VK_A ||
                 e.getKeyCode() == KeyEvent.VK_S || e.getKeyCode() == KeyEvent.VK_D ||
                 e.getKeyCode() == KeyEvent.VK_F || e.getKeyCode() == KeyEvent.VK_G ||
                 e.getKeyCode() == KeyEvent.VK_H || e.getKeyCode() == KeyEvent.VK_T;
+    }
+
+    private boolean player2Keys(KeyEvent e) {
+        return ((e.getKeyCode() == KeyEvent.VK_LEFT) || (e.getKeyCode() == KeyEvent.VK_RIGHT) ||
+                (e.getKeyCode() == KeyEvent.VK_UP) || (e.getKeyCode() == KeyEvent.VK_DOWN) ||
+                (e.getKeyCode() == KeyEvent.VK_NUMPAD5) || (e.getKeyCode() == KeyEvent.VK_NUMPAD3) ||
+                (e.getKeyCode() == KeyEvent.VK_NUMPAD2) || (e.getKeyCode() == KeyEvent.VK_NUMPAD1));
     }
 
     public void move() {
@@ -133,40 +133,43 @@ public class Game extends JPanel {
                 RenderingHints.VALUE_ANTIALIAS_ON);
         this.paintBackground(g2d);
 
-        if (this.statusGame == StatusGame.ACTIVE) {
+        if (this.statusGame == StatusGame.MENU_SELECTION) {
+            paintMenu(g2d, PlayerNumber.getNumber(PlayerNumber.PLAYER1));
+            paintMenu(g2d, PlayerNumber.getNumber(PlayerNumber.PLAYER2));
+        } else {
             player1.paint(g2d);
             player2.paint(g2d);
             this.paintBoosts(g2d);
-        } else {
-            paintMenu(g2d, 0);
-            paintMenu(g2d, 1);
         }
     }
 
     private void paintMenu(Graphics2D g, int nPlayer) {
-        int n = this.HEIGHT / 13;
+        int rows = HEIGHT / 13;
+        int columns = WIDTH / 10;
 
         Font font = new Font("Serif", Font.PLAIN, 40);
         g.setFont(font);
 
-        for (int i = 1; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             g.setColor(Color.BLACK);
-            g.fillRect(100 + 500 * nPlayer, n * (2 * i + 1), 300, n);
+            g.fillRect(columns + 5 * columns * (nPlayer - 1), rows * (2 * i + 3),
+                    3 * columns, rows);
             g.setColor(Color.WHITE);
-            g.drawString(pJAvailable[i - 1], 100 + 500 * nPlayer + 90, (int) (n * (2 * i + 1) + 0.8 * n));
+            g.drawString(pJAvailable[i], columns + 5 * columns * (nPlayer - 1) + 90,
+                    (int) (rows * (2 * i + 3) + 0.8 * rows));
         }
 
-
         g.setColor(Color.white);
-        g.fillRect(100 + 500 * nPlayer, n, 300, n);
+        g.fillRect(columns + 5 * columns * (nPlayer - 1), rows, 3 * columns, rows);
         g.setColor(Color.red);
-        g.drawString("PLAYER " + (nPlayer + 1), 100 + 500 * nPlayer + 60, (int) (n + 0.8 * n));
+        g.drawString("PLAYER " + nPlayer, columns + 5 * columns * (nPlayer - 1) + 60,
+                (int) (rows + 0.8 * rows));
 
         double thickness = 6;
-        Stroke oldStroke = g.getStroke();
         g.setStroke(new BasicStroke((float) thickness));
-        g.drawRect(100 + 500 * nPlayer, n * (2 * select1 * (1 - nPlayer) + 2 * select2 * nPlayer + 3), 300, n);
-        g.setStroke(oldStroke);
+        g.drawRect(columns + 5 * columns * (nPlayer - 1),
+                rows * (2 * select1 * (2 - nPlayer) + 2 * select2 * (nPlayer - 1) + 3), 3 * columns, rows);
+
     }
 
     private void paintBackground(Graphics2D g2d) {
@@ -271,10 +274,10 @@ public class Game extends JPanel {
         if (e.getKeyCode() == KeyEvent.VK_T || e.getKeyCode() == KeyEvent.VK_NUMPAD5) {
             if (number == PlayerNumber.getNumber(PlayerNumber.PLAYER1)) {
                 select1Done = true;
-            } else{
+            } else {
                 select2Done = true;
             }
-            if(select1Done && select2Done){
+            if (select1Done && select2Done) {
                 this.createPlayers();
                 this.addPlayersToGame();
                 this.statusGame = StatusGame.ACTIVE;
