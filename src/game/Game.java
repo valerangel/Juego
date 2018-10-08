@@ -170,6 +170,13 @@ public class Game extends JPanel {
         g.drawRect(columns + 5 * columns * (nPlayer - 1),
                 rows * (2 * select1 * (2 - nPlayer) + 2 * select2 * (nPlayer - 1) + 3), 3 * columns, rows);
 
+        if ((select1Done && (2 - nPlayer) == 1) || (select2Done && (nPlayer - 1) == 1)) {
+            thickness = 12;
+            g.setColor(Color.yellow);
+            g.setStroke(new BasicStroke((float) thickness));
+            g.drawRect(columns + 5 * columns * (nPlayer - 1),
+                    rows * (2 * select1 * (2 - nPlayer) + 2 * select2 * (nPlayer - 1) + 3), 3 * columns, rows);
+        }
     }
 
     private void paintBackground(Graphics2D g2d) {
