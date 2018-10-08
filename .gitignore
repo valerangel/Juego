@@ -1,3 +1,5 @@
 .idea/
 out/
-lwjgl/
+!out/artifacts/Juego/bundles/Juego
+
+!out/artifacts/Juego/bundles/Juego.jar

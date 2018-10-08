@@ -6,12 +6,85 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c39f8791-fe52-48bd-9b67-e2008a145d0d" name="Default" comment="">
+    <list default="true" id="c39f8791-fe52-48bd-9b67-e2008a145d0d" name="Default" comment="Added a menu for selecting players before the game starts.">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Juego.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/J360Controller.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lwjgl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/doc/3rdparty/jinput_license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/doc/3rdparty/jogl_license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/doc/3rdparty/lzma_license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/doc/3rdparty/openal_license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/doc/CREDITS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/doc/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/doc/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/doc/lwjgl_hidden_switches.text" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/AppleJavaExtensions.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/asm-debug-all.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/jinput.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/laf-plugin-7.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/laf-widget-7.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/log4j-api-2.0-beta9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/lwjgl-debug.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/lwjgl.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/lwjgl_test.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/lwjgl_util.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/lwjgl_util_applet.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/lzma.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/substance-7.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/jar/trident-7.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/linux/libjinput-linux.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/linux/libjinput-linux64.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/linux/liblwjgl.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/linux/liblwjgl64.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/linux/libopenal.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/linux/libopenal64.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/macosx/libjinput-osx.dylib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/macosx/liblwjgl.dylib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/macosx/openal.dylib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/solaris/liblwjgl.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/solaris/liblwjgl64.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/solaris/libopenal.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/solaris/libopenal64.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/windows/OpenAL32.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/windows/OpenAL64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/windows/jinput-dx8.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/windows/jinput-dx8_64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/windows/jinput-raw.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/windows/jinput-raw_64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/windows/lwjgl.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/native/windows/lwjgl64.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/Footsteps.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/appletlogo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/appletprogress.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/ball.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/ball_sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/center.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/ding.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/left.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/logo/lwjgl_logo-with_jacket.ai" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/logo/lwjgl_logo-with_jacket.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/lwjgl_16x16.xpm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/lwjgl_32x32.xpm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/resources.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/right.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/alien.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/alien2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/alien3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/gotyou.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/hit.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/loose.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/pressanykey.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/ship.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/shot.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/shot.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/start.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/win.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lwjgl/res/spaceinvaders/youwin.gif" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/Game.java" afterPath="$PROJECT_DIR$/src/game/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/Main.java" afterPath="$PROJECT_DIR$/src/game/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/StartGame.java" afterPath="$PROJECT_DIR$/src/game/StartGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/player/Player.java" afterPath="$PROJECT_DIR$/src/game/player/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Juego.iml" afterPath="$PROJECT_DIR$/Juego.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +106,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="157">
+              <caret line="176" column="37" lean-forward="true" selection-start-line="176" selection-start-column="37" selection-end-line="176" selection-end-column="37" />
               <folding>
                 <element signature="method#Game#0;class#Game#0" expanded="false" />
                 <element signature="method#Game#1;class#Game#0" expanded="false" />
@@ -47,7 +120,8 @@
                 <element signature="method#keyPressed#0;class#1234:2566" expanded="false" />
                 <element signature="method#player1Keys#0;class#Game#0" expanded="false" />
                 <element signature="method#player2Keys#0;class#Game#0" expanded="false" />
-                <element signature="method#paintBackground#0;class#Game#0" expanded="false" />
+                <element signature="method#move#0;class#Game#0" expanded="false" />
+                <element signature="method#paintMenu#0;class#Game#0" expanded="false" />
                 <element signature="method#gameOver#0;class#Game#0" expanded="false" />
                 <element signature="method#createBoost#0;class#Game#0" expanded="false" />
                 <element signature="method#paintBoosts#0;class#Game#0" expanded="false" />
@@ -55,18 +129,8 @@
                 <element signature="method#addPlayersToGame#0;class#Game#0" expanded="false" />
                 <element signature="method#setPlayerType#0;class#Game#0" expanded="false" />
                 <element signature="method#changeSelectMenu#0;class#Game#0" expanded="false" />
-                <marker date="1538830177569" expanded="false" signature="6132:6266" ph="{...}" />
+                <marker date="1539028846832" expanded="false" signature="6132:6266" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerNumber.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/player/PlayerNumber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -74,8 +138,8 @@
       <file leaf-file-name="Melee.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/Melee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="47" />
+            <state relative-caret-position="204">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#Melee#0" expanded="false" />
               </folding>
@@ -87,7 +151,7 @@
         <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="52" />
+              <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -96,8 +160,8 @@
       <file leaf-file-name="StartGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/StartGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="119">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,8 +170,8 @@
       <file leaf-file-name="Shotgun.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/Shotgun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+            <state relative-caret-position="850">
+              <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding>
                 <marker date="1538298530541" expanded="true" signature="2280:2902" ph="{...}" />
               </folding>
@@ -127,11 +191,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1071">
-              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="1632">
+              <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#Player#0" expanded="false" />
                 <element signature="method#Player#0;class#Player#0" expanded="false" />
@@ -150,8 +214,8 @@
       <file leaf-file-name="Poison.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/Poison.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="6" />
+            <state relative-caret-position="748">
+              <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="6" />
               <folding>
                 <element signature="docComment;class#Poison#0" expanded="false" />
                 <element signature="method#move#0;class#Poison#0" expanded="false" />
@@ -220,15 +284,15 @@
         <option value="$PROJECT_DIR$/src/game/player/Shotgun.java" />
         <option value="$PROJECT_DIR$/src/game/player/Bullet_Shotgun.java" />
         <option value="$PROJECT_DIR$/src/game/player/Range.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Melee.java" />
         <option value="$PROJECT_DIR$/src/game/player/Poison.java" />
         <option value="$PROJECT_DIR$/src/game/player/PoisonsPoison.java" />
         <option value="$PROJECT_DIR$/src/game/StatusGame.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/game/player/Player.java" />
-        <option value="$PROJECT_DIR$/src/game/Game.java" />
         <option value="$PROJECT_DIR$/src/game/StartGame.java" />
         <option value="$PROJECT_DIR$/src/game/Main.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/game/player/Melee.java" />
+        <option value="$PROJECT_DIR$/src/game/Game.java" />
       </list>
     </option>
   </component>
@@ -265,6 +329,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
@@ -335,19 +400,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/Juego/Juego.jar" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="juego" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -832,7 +896,9 @@
       <workItem from="1534929289397" duration="1931000" />
       <workItem from="1535813639066" duration="24000" />
       <workItem from="1538298445274" duration="2214000" />
-      <workItem from="1538815774829" duration="14076000" />
+      <workItem from="1538815774829" duration="17534000" />
+      <workItem from="1538927617838" duration="1650000" />
+      <workItem from="1539026838753" duration="2758000" />
     </task>
     <task id="LOCAL-00001" summary="Probando esto a ver">
       <created>1529521666950</created>
@@ -967,11 +1033,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538823067353</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added a menu for selecting players before the game starts.">
+      <created>1538830203940</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1538830203940</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128032000" />
+    <option name="totallyTimeSpent" value="135898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -986,12 +1059,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28" sideWeight="0.50907713" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0608" sideWeight="0.49092284" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3216" sideWeight="0.49092284" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1860817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19213313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1104,8 +1177,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/Game2.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Ball.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Game.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/awt/windows/WComponentPeer.class">
@@ -1211,7 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="794" column="17" lean-forward="false" selection-start-line="794" selection-start-column="17" selection-end-line="794" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1251,9 +1321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="33" column="93" lean-forward="false" selection-start-line="33" selection-start-column="93" selection-end-line="33" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1275,13 +1342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="14" column="79" lean-forward="false" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#958#959#0" expanded="false" />
-            <element signature="e#987#988#0" expanded="false" />
-            <element signature="e#2847#2848#0" expanded="false" />
-            <element signature="e#2935#2936#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1290,10 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,15 +1365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,24 +1380,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="40" column="25" lean-forward="false" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Melee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="47" />
-          <folding>
-            <element signature="docComment;class#Melee#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/player/Shotgun.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        <state relative-caret-position="850">
+          <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
           <folding>
             <marker date="1538298530541" expanded="true" signature="2280:2902" ph="{...}" />
           </folding>
@@ -1359,56 +1395,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/player/Poison.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="6" />
+        <state relative-caret-position="748">
+          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="6" />
           <folding>
             <element signature="docComment;class#Poison#0" expanded="false" />
             <element signature="method#move#0;class#Poison#0" expanded="false" />
             <element signature="method#keyPressed#0;class#Poison#0" expanded="false" />
             <marker date="1538298530588" expanded="false" signature="3641:3907" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="method#Game#0;class#Game#0" expanded="false" />
-            <element signature="method#Game#1;class#Game#0" expanded="false" />
-            <element signature="class#1234:2566" expanded="false" />
-            <element signature="method#keyTyped#0;class#1234:2566" expanded="false" />
-            <element signature="method#keyReleased#0;class#1234:2566" expanded="false" />
-            <element signature="method#keyPressed#0;class#1234:2566" expanded="false" />
-            <element signature="method#player1Keys#0;class#Game#0" expanded="false" />
-            <element signature="method#player2Keys#0;class#Game#0" expanded="false" />
-            <element signature="method#paintBackground#0;class#Game#0" expanded="false" />
-            <element signature="method#gameOver#0;class#Game#0" expanded="false" />
-            <element signature="method#createBoost#0;class#Game#0" expanded="false" />
-            <element signature="method#paintBoosts#0;class#Game#0" expanded="false" />
-            <element signature="method#createPlayers#0;class#Game#0" expanded="false" />
-            <element signature="method#addPlayersToGame#0;class#Game#0" expanded="false" />
-            <element signature="method#setPlayerType#0;class#Game#0" expanded="false" />
-            <element signature="method#changeSelectMenu#0;class#Game#0" expanded="false" />
-            <marker date="1538830177569" expanded="false" signature="6132:6266" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/StartGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1422,10 +1416,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
-          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="1632">
+          <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Player#0" expanded="false" />
             <element signature="method#Player#0;class#Player#0" expanded="false" />
@@ -1436,6 +1437,61 @@
             <element signature="method#dealDamageInv#0;class#Player#0" expanded="false" />
             <element signature="method#heal#0;class#Player#0" expanded="false" />
             <marker date="1538829815937" expanded="false" signature="5553:8225" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Juego/game/player/Melee.class" />
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Juego/game/boost/Boost_Heal.class" />
+    <entry file="file://$PROJECT_DIR$/src/game/player/Melee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Melee#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/StartGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="176" column="37" lean-forward="true" selection-start-line="176" selection-start-column="37" selection-end-line="176" selection-end-column="37" />
+          <folding>
+            <element signature="method#Game#0;class#Game#0" expanded="false" />
+            <element signature="method#Game#1;class#Game#0" expanded="false" />
+            <element signature="class#1234:2566" expanded="false" />
+            <element signature="method#keyTyped#0;class#1234:2566" expanded="false" />
+            <element signature="method#keyReleased#0;class#1234:2566" expanded="false" />
+            <element signature="method#keyPressed#0;class#1234:2566" expanded="false" />
+            <element signature="method#player1Keys#0;class#Game#0" expanded="false" />
+            <element signature="method#player2Keys#0;class#Game#0" expanded="false" />
+            <element signature="method#move#0;class#Game#0" expanded="false" />
+            <element signature="method#paintMenu#0;class#Game#0" expanded="false" />
+            <element signature="method#gameOver#0;class#Game#0" expanded="false" />
+            <element signature="method#createBoost#0;class#Game#0" expanded="false" />
+            <element signature="method#paintBoosts#0;class#Game#0" expanded="false" />
+            <element signature="method#createPlayers#0;class#Game#0" expanded="false" />
+            <element signature="method#addPlayersToGame#0;class#Game#0" expanded="false" />
+            <element signature="method#setPlayerType#0;class#Game#0" expanded="false" />
+            <element signature="method#changeSelectMenu#0;class#Game#0" expanded="false" />
+            <marker date="1539028846832" expanded="false" signature="6132:6266" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1507,6 +1563,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>J360Controller</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
