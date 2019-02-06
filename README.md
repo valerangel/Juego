@@ -6,7 +6,7 @@ This game is a personal project developed in Java for fun and learning.
 
 It's a two player's fighting game in 2D, 1 versus 1. Each one selects one of the 5 unique characters and has to low the other's health to 0. The characters are:
   - Planet: A big body with an epileptic satellite that deals a lot of DPS when it's over the enemy. It's very
-    strong and has a lot of health, but slow. It's medium-hard difficulty to play.
+    strong and has a lot of health, but slow. It's medium difficulty to play.
   - Melee: A tiny body that can be raged so it increases a lot his speed, but he gets tired. His stats are
     average when it's not raged. It's easy to play.
   - Ranged: An unstoppable shooting machine that can shoot over 4 directions. It's very squishy but fast
