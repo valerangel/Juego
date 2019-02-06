@@ -36,11 +36,11 @@ Player 2:  Use up arrow and down arrow to move between characters and select wit
 
   ----- CHARACTERS -----
 
-Planet  - WASD or arrows to move.
-Melee   - WASD or arrows to move and T or 5 (Numpad) to boost yourself.
-Range   - WASD or arrows to move and TFGH or 5123 (Numpad) to direct the shoots.
-Poison  - WASD or arrows to move and T or 5 (Numpad) to be immune.
-Shotgun - WASD or arrows to move and TFGH or 5123 (Numpad) to direct the burst of bullets.
+Planet  -> WASD or arrows to move.
+Melee   -> WASD or arrows to move and T or 5 (Numpad) to boost yourself.
+Range   -> WASD or arrows to move and TFGH or 5123 (Numpad) to direct the shoots.
+Poison  -> WASD or arrows to move and T or 5 (Numpad) to be immune.
+Shotgun -> WASD or arrows to move and TFGH or 5123 (Numpad) to direct the burst of bullets.
 
 
 
