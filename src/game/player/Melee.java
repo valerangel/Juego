@@ -67,8 +67,9 @@ public class Melee extends Player {
         this.setImage();
         Image image = getImageIcon().getImage();
 
-        g.drawImage(image, (int) x, (int) y, diameter, diameter, game);
-
+        if(!invulnerable || contInvulnerable % 2 == 0) {
+            g.drawImage(image, (int) x, (int) y, diameter, diameter, game);
+        }
         super.paintLifeBar(g);
         this.paintChargeBar(g);
     }
@@ -157,6 +158,6 @@ public class Melee extends Player {
     }
 
     private boolean isKeyPressed(KeyEvent e) {
-        return (e.getKeyCode() == KeyEvent.VK_T || e.getKeyCode() == KeyEvent.VK_NUMPAD5);
+        return this.game.isAttackUp(e);
     }
 }

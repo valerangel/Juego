@@ -129,24 +129,24 @@ public abstract class Player {
     }
 
     public void keyReleased(KeyEvent e) {
-        if (e.getKeyCode() == KeyEvent.VK_LEFT || e.getKeyCode() == KeyEvent.VK_A)
+        if (this.game.isMoveLeft(e))
             speedXNeg = 0;
-        if (e.getKeyCode() == KeyEvent.VK_RIGHT || e.getKeyCode() == KeyEvent.VK_D)
+        if (this.game.isMoveRight(e))
             speedXPos = 0;
-        if (e.getKeyCode() == KeyEvent.VK_UP || e.getKeyCode() == KeyEvent.VK_W)
+        if (this.game.isMoveUp(e))
             speedYNeg = 0;
-        if (e.getKeyCode() == KeyEvent.VK_DOWN || e.getKeyCode() == KeyEvent.VK_S)
+        if (this.game.isMoveDown(e))
             speedYPos = 0;
     }
 
     public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode() == KeyEvent.VK_LEFT || e.getKeyCode() == KeyEvent.VK_A)
+        if (this.game.isMoveLeft(e))
             speedXNeg = this.speed;
-        if (e.getKeyCode() == KeyEvent.VK_RIGHT || e.getKeyCode() == KeyEvent.VK_D)
+        if (this.game.isMoveRight(e))
             speedXPos = this.speed;
-        if (e.getKeyCode() == KeyEvent.VK_UP || e.getKeyCode() == KeyEvent.VK_W)
+        if (this.game.isMoveUp(e))
             speedYNeg = this.speed;
-        if (e.getKeyCode() == KeyEvent.VK_DOWN || e.getKeyCode() == KeyEvent.VK_S)
+        if (this.game.isMoveDown(e))
             speedYPos = this.speed;
     }
 
@@ -251,4 +251,6 @@ public abstract class Player {
     public void poisonPlayer(){
         this.poisoned = PoisonsPoison.POISON_TIME;
     }
+
+
 }

@@ -50,8 +50,9 @@ public class Range extends Player {
     public void paint(Graphics2D g) {
 
         Image image = this.img.getImage();
-        g.drawImage(image, (int) x,(int)  y, DIAMETER_RANGE, DIAMETER_RANGE, game);
-
+        if(!invulnerable || contInvulnerable % 2 == 0) {
+            g.drawImage(image, (int) x, (int) y, DIAMETER_RANGE, DIAMETER_RANGE, game);
+        }
         for (int i = 0; i < shoots.size(); i++) {
             if (shoots.get(i) != null)
                 shoots.get(i).paint(g, game);
@@ -121,19 +122,19 @@ public class Range extends Player {
 
     public void keyPressed(KeyEvent e) {
         super.keyPressed(e);
-        if (e.getKeyCode() == KeyEvent.VK_F || e.getKeyCode() == KeyEvent.VK_NUMPAD1) {
+        if (this.game.isAttackLeft(e)) {
             speedXShoot = -1;
             speedYShoot = 0;
         }
-        if (e.getKeyCode() == KeyEvent.VK_H || e.getKeyCode() == KeyEvent.VK_NUMPAD3) {
+        if (this.game.isAttackRight(e)) {
             speedXShoot = 1;
             speedYShoot = 0;
         }
-        if (e.getKeyCode() == KeyEvent.VK_T || e.getKeyCode() == KeyEvent.VK_NUMPAD5) {
+        if (this.game.isAttackUp(e)) {
             speedYShoot = -1;
             speedXShoot = 0;
         }
-        if (e.getKeyCode() == KeyEvent.VK_G || e.getKeyCode() == KeyEvent.VK_NUMPAD2) {
+        if (this.game.isAttackDown(e)) {
             speedYShoot = 1;
             speedXShoot = 0;
         }

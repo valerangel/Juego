@@ -51,7 +51,9 @@ public class Poison extends Player {
     public void paint(Graphics2D g) {
 
         Image image = this.img.getImage();
-        g.drawImage(image, (int) x, (int) y, DIAMETER_POISON, DIAMETER_POISON, game);
+        if(!invulnerable || contInvulnerable % 2 == 0) {
+            g.drawImage(image, (int) x, (int) y, DIAMETER_POISON, DIAMETER_POISON, game);
+        }
 
         for (int i = 0; i < poisons.size(); i++) {
             if (poisons.get(i) != null)
@@ -156,7 +158,7 @@ public class Poison extends Player {
 
     public void keyPressed(KeyEvent e) {
         super.keyPressed(e);
-        if (e.getKeyCode() == KeyEvent.VK_T || e.getKeyCode() == KeyEvent.VK_NUMPAD5) {
+        if (this.game.isAttackUp(e)) {
             if (rechargeBoost >= RECHARGE_BOOST) {
                 this.boosted = true;
             }

@@ -9,7 +9,6 @@ public class StartGame {
     private Game game;
 
     public StartGame() throws InterruptedException {
-
         generateJFrame();
         refreshGame();
     }

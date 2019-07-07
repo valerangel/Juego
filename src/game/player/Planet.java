@@ -11,8 +11,8 @@ import java.awt.*;
 public class Planet extends Player {
     private static final double HEALTH_PLANET = 150;
     private static final double DAMAGE_PLANET = AttackPlanet.getDamage();
-    private static final int SPEED_PLANET = 6;
-    private static final int DIAMETER_PLANET = 48;
+    private static final int SPEED_PLANET = 5;
+    private static final int DIAMETER_PLANET = 60;
 
     private AttackPlanet attackPlanet;
 
@@ -45,7 +45,9 @@ public class Planet extends Player {
     @Override
     public void paint(Graphics2D g) {
         Image image = getImageIcon().getImage();
-        g.drawImage(image, (int) x,(int)  y, diameter, diameter, game);
+        if(!invulnerable || contInvulnerable % 2 == 0) {
+            g.drawImage(image, (int) x,(int)  y, diameter, diameter, game);
+        }
         this.attackPlanet.paint(g);
 
         super.paintLifeBar(g);

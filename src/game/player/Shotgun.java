@@ -49,7 +49,9 @@ public class Shotgun extends Player {
     public void paint(Graphics2D g) {
 
         Image image = this.img.getImage();
-        g.drawImage(image, (int) x, (int) y, DIAMETER_SHOTGUN, DIAMETER_SHOTGUN, game);
+        if(!invulnerable || contInvulnerable % 2 == 0) {
+            g.drawImage(image, (int) x, (int) y, DIAMETER_SHOTGUN, DIAMETER_SHOTGUN, game);
+        }
 
         for (int i = 0; i < bullets.size(); i++) {
             if (bullets.get(i) != null)
@@ -124,19 +126,19 @@ public class Shotgun extends Player {
 
     public void keyPressed(KeyEvent e) {
         super.keyPressed(e);
-        if (e.getKeyCode() == KeyEvent.VK_F || e.getKeyCode() == KeyEvent.VK_NUMPAD1) {
+        if (this.game.isAttackLeft(e)) {
             angle = Math.PI;
             shooting = true;
         }
-        if (e.getKeyCode() == KeyEvent.VK_H || e.getKeyCode() == KeyEvent.VK_NUMPAD3) {
+        if (this.game.isAttackRight(e)) {
             angle = 0;
             shooting = true;
         }
-        if (e.getKeyCode() == KeyEvent.VK_T || e.getKeyCode() == KeyEvent.VK_NUMPAD5) {
+        if (this.game.isAttackUp(e)) {
             angle = 1.5 * Math.PI;
             shooting = true;
         }
-        if (e.getKeyCode() == KeyEvent.VK_G || e.getKeyCode() == KeyEvent.VK_NUMPAD2) {
+        if (this.game.isAttackDown(e)) {
             angle = 0.5 * Math.PI;
             shooting = true;
         }
