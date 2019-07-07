@@ -9,13 +9,15 @@
     <list default="true" id="c39f8791-fe52-48bd-9b67-e2008a145d0d" name="Default" comment="Added a menu for selecting players before the game starts.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/StartGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/StartGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/boost/Boost_Heal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/boost/Boost_Heal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/boost/Boost_Mine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/boost/Boost_Mine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/player/AttackPlanet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/AttackPlanet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/player/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Melee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/player/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Planet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/player/Poison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Poison.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/player/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Range.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/player/Shotgun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Shotgun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icon/Poison1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Poison1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icon/Poison1Boosted.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Poison1Boosted.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icon/PoisonsPoison.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/PoisonsPoison.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,14 +40,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="460" column="21" selection-start-line="460" selection-start-column="21" selection-end-line="460" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="566" selection-start-line="566" selection-end-line="566" />
               <folding>
                 <element signature="method#Game#0;class#Game#0" />
-                <element signature="method#Game#1;class#Game#0" />
                 <element signature="class#1234:2566" />
                 <element signature="method#keyTyped#0;class#2071:3403" />
                 <element signature="method#keyReleased#0;class#1234:2566" />
@@ -76,7 +77,6 @@
                 <element signature="e#8034#8433#1" />
                 <element signature="e#9405#9773#1" />
                 <element signature="method#paintBackground#0;class#Game#0" />
-                <element signature="method#gameOver#0;class#Game#0" />
                 <element signature="method#createBoost#0;class#Game#0" />
                 <element signature="e#6873#6992#1" />
                 <element signature="e#6914#6982#1" />
@@ -135,7 +135,26 @@
                 <element signature="e#14413#14484#1" />
                 <element signature="e#14562#14709#1" />
                 <element signature="e#14852#15247#0" />
+                <element signature="e#15429#15811#0" />
                 <element signature="e#15514#15592#1" />
+                <element signature="e#15739#15767#1" />
+                <element signature="e#15873#15913#1" />
+                <element signature="e#16138#16185#1" />
+                <element signature="e#16208#16257#1" />
+                <element signature="e#16278#16327#1" />
+                <element signature="e#16348#16397#1" />
+                <element signature="e#16418#16467#1" />
+                <element signature="e#16488#16537#1" />
+                <element signature="e#16558#16607#1" />
+                <element signature="e#16613#17171#1" />
+                <element signature="e#16631#16678#1" />
+                <element signature="e#16700#16749#1" />
+                <element signature="e#16770#16819#1" />
+                <element signature="e#16840#16890#1" />
+                <element signature="e#16911#16960#1" />
+                <element signature="e#16981#17032#1" />
+                <element signature="e#17053#17104#1" />
+                <element signature="e#17108#17160#1" />
                 <element signature="e#10552#10634#0" />
                 <element signature="e#10673#10755#0" />
                 <element signature="e#10613#10695#0" />
@@ -144,6 +163,61 @@
                 <element signature="e#10970#11100#0" />
                 <element signature="e#11106#11236#0" />
                 <element signature="e#11242#11372#0" />
+                <element signature="e#18253#18312#0" />
+                <element signature="e#18698#18746#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/boost/Boost_Heal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="28" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+              <folding>
+                <element signature="e#2365#2366#0" expanded="true" />
+                <element signature="e#2405#2406#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/AttackPlanet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/boost/Boost_Mine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/Melee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+              <folding>
+                <element signature="docComment;class#Melee#0" />
+                <element signature="e#4811#4812#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,57 +226,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/Range.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+            <state relative-caret-position="187">
+              <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
               <folding>
                 <element signature="docComment;class#Range#0" />
                 <element signature="method#Range#0;class#Range#0" />
                 <element signature="e#1173#1228#1" />
                 <element signature="method#setImage#0;class#Range#0" />
-                <element signature="e#1947#2005#1" />
-                <element signature="e#2011#2069#1" />
                 <element signature="method#paintChargeBar#0;class#Range#0" />
-                <element signature="e#2294#2547#1" />
-                <element signature="e#2553#2893#1" />
-                <element signature="method#move#0;class#Range#0" />
-                <element signature="e#2988#3023#1" />
-                <element signature="e#3029#3647#1" />
-                <element signature="e#3149#3290#1" />
-                <element signature="e#3194#3276#1" />
-                <element signature="e#3503#3567#1" />
                 <element signature="e#3573#3637#1" />
-                <element signature="e#3697#3785#1" />
+                <element signature="e#3909#3910#0" expanded="true" />
                 <element signature="e#3953#3954#0" expanded="true" />
                 <element signature="method#keyPressed#0;class#Range#0" />
-                <element signature="e#4043#4113#1" />
-                <element signature="e#4200#4269#1" />
-                <element signature="e#4356#4426#1" />
-                <element signature="e#4513#4582#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/player/Melee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
-              <folding>
-                <element signature="docComment;class#Melee#0" />
-                <element signature="e#4771#4772#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-              <folding>
-                <element signature="e#2405#2406#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,63 +246,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/Shotgun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+            <state relative-caret-position="192">
+              <caret line="98" column="49" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="49" />
               <folding>
-                <element signature="e#4213#4214#0" expanded="true" />
+                <element signature="docComment;class#Shotgun#0" />
+                <element signature="method#Shotgun#0;class#Shotgun#0" />
+                <element signature="e#1560#1663#1" />
+                <element signature="e#1643#1741#1" />
+                <element signature="method#setImage#0;class#Shotgun#0" />
+                <element signature="e#1941#2001#1" />
+                <element signature="e#2007#2067#1" />
+                <element signature="method#paintChargeBar#0;class#Shotgun#0" />
+                <element signature="e#2292#2547#1" />
+                <element signature="e#2553#2896#1" />
+                <element signature="e#3270#3432#1" />
+                <element signature="e#3320#3414#1" />
+                <element signature="e#3714#3789#1" />
+                <element signature="e#3795#3870#1" />
+                <element signature="e#3942#4016#1" />
+                <element signature="e#4154#4200#1" />
+                <element signature="method#keyPressed#0;class#Shotgun#0" />
+                <element signature="e#4301#4370#1" />
+                <element signature="e#4457#4520#1" />
+                <element signature="e#4607#4682#1" />
+                <element signature="e#4769#4844#1" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/player/Poison.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="170" column="25" lean-forward="true" selection-start-line="170" selection-start-column="25" selection-end-line="170" selection-end-column="25" />
+            <state relative-caret-position="245">
+              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
               <folding>
                 <element signature="docComment;class#Poison#0" />
-                <element signature="e#5546#5547#0" expanded="true" />
+                <element signature="e#5564#5565#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
-              <folding>
-                <element signature="docComment;class#Player#0" />
-                <element signature="method#Player#0;class#Player#0" />
-                <element signature="e#1497#1549#1" />
-                <element signature="e#1555#1608#1" />
-                <element signature="e#2288#2419#1" />
-                <element signature="e#2425#2522#1" />
-                <element signature="e#2546#2639#1" />
-                <element signature="e#2665#2708#1" />
-                <element signature="e#2757#2841#1" />
-                <element signature="method#getBoundsArr#0;class#Player#0" />
-                <element signature="method#keyReleased#0;class#Player#0" />
-                <element signature="method#keyPressed#0;class#Player#0" />
-                <element signature="e#4423#4424#0" expanded="true" />
-                <element signature="e#4455#4456#0" expanded="true" />
-                <element signature="method#dealDamage#0;class#Player#0" />
-                <element signature="method#dealDamageInv#0;class#Player#0" />
-                <element signature="method#paintLifeBar#0;class#Player#0" />
-                <element signature="method#heal#0;class#Player#0" />
-                <element signature="n#!!block;n#poisonPlayer#0;n#Player#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/StartGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -276,7 +292,7 @@
         <entry file="file://$PROJECT_DIR$/src/game/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -299,8 +315,13 @@
       <find>pain</find>
       <find>drawImage</find>
       <find>50;</find>
+      <find>reset</find>
       <find>KeyE</find>
+      <find>boosted</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\Ángel\Documents\GitHub\Juego\src</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -331,9 +352,6 @@
         <option value="$PROJECT_DIR$/src/game/Melee.java" />
         <option value="$PROJECT_DIR$/src/game/boost/Boost.java" />
         <option value="$PROJECT_DIR$/src/game/player/Number_of_player.java" />
-        <option value="$PROJECT_DIR$/src/game/boost/Boost_Heal.java" />
-        <option value="$PROJECT_DIR$/src/game/player/AttackPlanet.java" />
-        <option value="$PROJECT_DIR$/src/game/boost/Boost_Mine.java" />
         <option value="$PROJECT_DIR$/src/game/player/Shoot_Range.java" />
         <option value="$PROJECT_DIR$/src/game/player/Bullet_Shotgun.java" />
         <option value="$PROJECT_DIR$/src/game/player/PoisonsPoison.java" />
@@ -341,13 +359,16 @@
         <option value="$PROJECT_DIR$/src/game/Main.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/game/player/Player.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Range.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Melee.java" />
         <option value="$PROJECT_DIR$/src/game/player/Planet.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Shotgun.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Poison.java" />
         <option value="$PROJECT_DIR$/src/game/StartGame.java" />
+        <option value="$PROJECT_DIR$/src/game/boost/Boost_Heal.java" />
+        <option value="$PROJECT_DIR$/src/game/boost/Boost_Mine.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Shotgun.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Melee.java" />
         <option value="$PROJECT_DIR$/src/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Range.java" />
+        <option value="$PROJECT_DIR$/src/game/player/AttackPlanet.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Poison.java" />
       </list>
     </option>
   </component>
@@ -375,6 +396,31 @@
               <item name="Juego" type="b2602c69:ProjectViewProjectNode" />
               <item name="Juego" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Juego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Juego" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Juego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Juego" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Juego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Juego" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="boost" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Juego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Juego" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -393,7 +439,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHubDesktop/app-2.1.0/resources/app/git/cmd/git.exe" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -598,7 +644,7 @@
       <workItem from="1538927617838" duration="1650000" />
       <workItem from="1539026838753" duration="3545000" />
       <workItem from="1562424588329" duration="502000" />
-      <workItem from="1562488402766" duration="11005000" />
+      <workItem from="1562488402766" duration="21236000" />
     </task>
     <task id="LOCAL-00001" summary="Probando esto a ver">
       <created>1529521666950</created>
@@ -747,11 +793,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539030785239</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added a menu for selecting players before the game starts.">
+      <created>1562505400831</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1562505400831</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148192000" />
+    <option name="totallyTimeSpent" value="158423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
@@ -765,20 +818,20 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Image Layers" order="7" />
-      <window_info anchor="bottom" id="Duplicates" weight="0.3283582" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49707174" weight="0.328" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49092284" weight="0.24046434" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6128" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50907713" side_tool="true" weight="0.28" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4969743" weight="0.328" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49394855" visible="true" weight="0.32504147" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Duplicates" order="0" weight="0.3283582" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49707174" weight="0.328" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49092284" visible="true" weight="0.24046434" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.6128" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50907713" side_tool="true" weight="0.28" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4969743" weight="0.328" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49394855" weight="0.32504147" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -791,37 +844,6 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Maven" order="10" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1860817" />
-      <window_info id="Structure" order="1" weight="0.24962178" />
-      <window_info id="Nl-Palette" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Image Layers" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49707174" weight="0.328" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49092284" visible="true" weight="0.0608" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6128" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50907713" side_tool="true" weight="0.28" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4969743" weight="0.328" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49394855" weight="0.3264" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Properties" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32980332" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -937,20 +959,6 @@
     <entry file="file://$PROJECT_DIR$/src/game/player/Number_of_player.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Component.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Rectangle.java" />
-    <entry file="file://$PROJECT_DIR$/src/game/boost/Boost_Heal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/AttackPlanet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="84" column="24" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/ImageIcon.java" />
     <entry file="file://$PROJECT_DIR$/src/game/player/Shoot_Range.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -979,13 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/boost/Boost_Mine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1033,91 +1034,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Melee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="docComment;class#Melee#0" />
-            <element signature="e#4771#4772#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-          <folding>
-            <element signature="e#2405#2406#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Range.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="52" column="38" lean-forward="true" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
-          <folding>
-            <element signature="docComment;class#Range#0" />
-            <element signature="method#Range#0;class#Range#0" />
-            <element signature="e#1173#1228#1" />
-            <element signature="method#setImage#0;class#Range#0" />
-            <element signature="e#1947#2005#1" />
-            <element signature="e#2011#2069#1" />
-            <element signature="method#paintChargeBar#0;class#Range#0" />
-            <element signature="e#2294#2547#1" />
-            <element signature="e#2553#2893#1" />
-            <element signature="method#move#0;class#Range#0" />
-            <element signature="e#2988#3023#1" />
-            <element signature="e#3029#3647#1" />
-            <element signature="e#3149#3290#1" />
-            <element signature="e#3194#3276#1" />
-            <element signature="e#3503#3567#1" />
-            <element signature="e#3573#3637#1" />
-            <element signature="e#3697#3785#1" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="method#keyPressed#0;class#Range#0" />
-            <element signature="e#4043#4113#1" />
-            <element signature="e#4200#4269#1" />
-            <element signature="e#4356#4426#1" />
-            <element signature="e#4513#4582#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Shotgun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <element signature="e#4213#4214#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Poison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="170" column="25" lean-forward="true" selection-start-line="170" selection-start-column="25" selection-end-line="170" selection-end-column="25" />
-          <folding>
-            <element signature="docComment;class#Poison#0" />
-            <element signature="e#5546#5547#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
+        <state relative-caret-position="-1324">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
             <element signature="docComment;class#Player#0" />
             <element signature="method#Player#0;class#Player#0" />
@@ -1144,18 +1064,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/StartGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="158">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/boost/Boost_Heal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/boost/Boost_Mine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Shotgun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="98" column="49" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="49" />
+          <folding>
+            <element signature="docComment;class#Shotgun#0" />
+            <element signature="method#Shotgun#0;class#Shotgun#0" />
+            <element signature="e#1560#1663#1" />
+            <element signature="e#1643#1741#1" />
+            <element signature="method#setImage#0;class#Shotgun#0" />
+            <element signature="e#1941#2001#1" />
+            <element signature="e#2007#2067#1" />
+            <element signature="method#paintChargeBar#0;class#Shotgun#0" />
+            <element signature="e#2292#2547#1" />
+            <element signature="e#2553#2896#1" />
+            <element signature="e#3270#3432#1" />
+            <element signature="e#3320#3414#1" />
+            <element signature="e#3714#3789#1" />
+            <element signature="e#3795#3870#1" />
+            <element signature="e#3942#4016#1" />
+            <element signature="e#4154#4200#1" />
+            <element signature="method#keyPressed#0;class#Shotgun#0" />
+            <element signature="e#4301#4370#1" />
+            <element signature="e#4457#4520#1" />
+            <element signature="e#4607#4682#1" />
+            <element signature="e#4769#4844#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Melee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Melee#0" />
+            <element signature="e#4811#4812#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="460" column="21" selection-start-line="460" selection-start-column="21" selection-end-line="460" selection-end-column="21" />
+        <state relative-caret-position="240">
+          <caret line="566" selection-start-line="566" selection-end-line="566" />
           <folding>
             <element signature="method#Game#0;class#Game#0" />
-            <element signature="method#Game#1;class#Game#0" />
             <element signature="class#1234:2566" />
             <element signature="method#keyTyped#0;class#2071:3403" />
             <element signature="method#keyReleased#0;class#1234:2566" />
@@ -1186,7 +1167,6 @@
             <element signature="e#8034#8433#1" />
             <element signature="e#9405#9773#1" />
             <element signature="method#paintBackground#0;class#Game#0" />
-            <element signature="method#gameOver#0;class#Game#0" />
             <element signature="method#createBoost#0;class#Game#0" />
             <element signature="e#6873#6992#1" />
             <element signature="e#6914#6982#1" />
@@ -1245,7 +1225,26 @@
             <element signature="e#14413#14484#1" />
             <element signature="e#14562#14709#1" />
             <element signature="e#14852#15247#0" />
+            <element signature="e#15429#15811#0" />
             <element signature="e#15514#15592#1" />
+            <element signature="e#15739#15767#1" />
+            <element signature="e#15873#15913#1" />
+            <element signature="e#16138#16185#1" />
+            <element signature="e#16208#16257#1" />
+            <element signature="e#16278#16327#1" />
+            <element signature="e#16348#16397#1" />
+            <element signature="e#16418#16467#1" />
+            <element signature="e#16488#16537#1" />
+            <element signature="e#16558#16607#1" />
+            <element signature="e#16613#17171#1" />
+            <element signature="e#16631#16678#1" />
+            <element signature="e#16700#16749#1" />
+            <element signature="e#16770#16819#1" />
+            <element signature="e#16840#16890#1" />
+            <element signature="e#16911#16960#1" />
+            <element signature="e#16981#17032#1" />
+            <element signature="e#17053#17104#1" />
+            <element signature="e#17108#17160#1" />
             <element signature="e#10552#10634#0" />
             <element signature="e#10673#10755#0" />
             <element signature="e#10613#10695#0" />
@@ -1254,6 +1253,55 @@
             <element signature="e#10970#11100#0" />
             <element signature="e#11106#11236#0" />
             <element signature="e#11242#11372#0" />
+            <element signature="e#18253#18312#0" />
+            <element signature="e#18698#18746#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Range.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
+          <folding>
+            <element signature="docComment;class#Range#0" />
+            <element signature="method#Range#0;class#Range#0" />
+            <element signature="e#1173#1228#1" />
+            <element signature="method#setImage#0;class#Range#0" />
+            <element signature="method#paintChargeBar#0;class#Range#0" />
+            <element signature="e#3573#3637#1" />
+            <element signature="e#3909#3910#0" expanded="true" />
+            <element signature="e#3953#3954#0" expanded="true" />
+            <element signature="method#keyPressed#0;class#Range#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/AttackPlanet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+          <folding>
+            <element signature="e#2365#2366#0" expanded="true" />
+            <element signature="e#2405#2406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Poison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+          <folding>
+            <element signature="docComment;class#Poison#0" />
+            <element signature="e#5564#5565#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1269,7 +1317,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

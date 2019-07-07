@@ -34,6 +34,7 @@ public class Boost_Mine extends Boost {
                 if (rectangles1[i].intersects(rectangles2[j]) && damageOnlyOnce) {
                     player.dealDamage(DAMAGE);
                     damageOnlyOnce = false;
+                    this.game.sound("sound/bomb.wav");
                     this.game.eliminateBoost(this.index);
                     break;
                 }

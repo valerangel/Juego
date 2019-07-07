@@ -16,8 +16,8 @@ public class Poison extends Player {
     private static final int SPEED_POISON = 6;
     protected static final int DIAMETER_POISON = 60;
     private static final int RECHARGE_TIME = 3;
-    private static final int RECHARGE_BOOST = 80;
-    private static final int TIME_BOOSTED = 50;
+    private static final int RECHARGE_BOOST = 150;
+    private static final int TIME_BOOSTED = 75;
 
     private static final int WIDTH_RECHARGE_BAR = 150;
     private static final int HEIGHT_RECHARGE_BAR = 15;
@@ -50,15 +50,16 @@ public class Poison extends Player {
     @Override
     public void paint(Graphics2D g) {
 
+        for (int i = 0; i < poisons.size(); i++) {
+            if (poisons.get(i) != null)
+                poisons.get(i).paint(g, game);
+        }
+
         Image image = this.img.getImage();
         if(!invulnerable || contInvulnerable % 2 == 0) {
             g.drawImage(image, (int) x, (int) y, DIAMETER_POISON, DIAMETER_POISON, game);
         }
 
-        for (int i = 0; i < poisons.size(); i++) {
-            if (poisons.get(i) != null)
-                poisons.get(i).paint(g, game);
-        }
 
         super.paintLifeBar(g);
         this.paintChargeBar(g);
@@ -159,7 +160,8 @@ public class Poison extends Player {
     public void keyPressed(KeyEvent e) {
         super.keyPressed(e);
         if (this.game.isAttackUp(e)) {
-            if (rechargeBoost >= RECHARGE_BOOST) {
+            if (rechargeBoost >= RECHARGE_BOOST & this.boosted == false) {
+                this.game.sound("sound/antonitt.wav");
                 this.boosted = true;
             }
         }

@@ -1,17 +1,19 @@
 
 package game;
 
+import game.boost.Boost;
 import game.boost.Boost_Heal;
 import game.boost.Boost_Mine;
 import game.player.*;
-import game.boost.Boost;
-import org.jetbrains.annotations.NotNull;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.File;
 import java.util.ArrayList;
-import javax.swing.*;
+import javax.sound.sampled.*;
+import java.io.IOException;
 
 public class Game extends JPanel {
 
@@ -50,6 +52,8 @@ public class Game extends JPanel {
 
     public Game() {
         this.resetGame();
+
+        this.music();
 
         p1MoveUp = KeyEvent.VK_W; p1MoveDown = KeyEvent.VK_S;
         p1MoveLeft = KeyEvent.VK_A; p1MoveRight = KeyEvent.VK_D;
@@ -265,6 +269,7 @@ public class Game extends JPanel {
     }
 
     public void gameOver(PlayerNumber winner) {
+        this.sound("sound/gameOver.wav");
         JOptionPane.showMessageDialog(this,
                 "Game Over. El jugador " + PlayerNumber.getNumber(winner) + " ha ganado.",
                 "Game Over", JOptionPane.INFORMATION_MESSAGE);
@@ -526,6 +531,38 @@ public class Game extends JPanel {
 
     public boolean isAttackRight( KeyEvent e){
         return (e.getKeyCode() == p1AttackRight || e.getKeyCode() == p2AttackRight);
+    }
+
+    /**
+     * Esta función se encarga de poner múscia.
+     */
+    private static void music() {
+        try {
+            AudioInputStream audio = AudioSystem.getAudioInputStream(new File("sound/mainSong.wav"));
+            Clip clip = AudioSystem.getClip();
+            clip.open(audio);
+            clip.loop(Clip.LOOP_CONTINUOUSLY);
+            FloatControl gainControl =
+                    (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+            gainControl.setValue(-20.0f);
+            clip.start();
+        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException uae) {
+            System.out.println(uae);
+        }
+    }
+
+    public static void sound(String path) {
+        try {
+            AudioInputStream audio = AudioSystem.getAudioInputStream(new File(path));
+            Clip clip = AudioSystem.getClip();
+            clip.open(audio);
+            FloatControl gainControl =
+                    (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+            gainControl.setValue(-10.0f);
+            clip.start();
+        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException uae) {
+            System.out.println(uae);
+        }
     }
 
 

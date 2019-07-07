@@ -26,6 +26,7 @@ public class Boost_Heal extends Boost {
     public void collision(Player player) {
         if (player.getBounds().intersects(getBounds())) {
             player.heal(HEALING);
+            this.game.sound("sound/heal.wav");
             this.game.eliminateBoost(this.index);
         }
     }

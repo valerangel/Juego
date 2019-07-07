@@ -50,6 +50,7 @@ public class AttackPlanet {
         for (int i = 0; i < rectangles1.length; i++) {
             for (int j = 0; j < rectangles2.length; j++) {
                 if (rectangles1[i].intersects(rectangles2[j])) {
+                    this.planet.game.sound("sound/planet.wav");
                     return true;
                 }
             }

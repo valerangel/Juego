@@ -97,6 +97,7 @@ public class Melee extends Player {
             recharge -= 7;
             this.speed = SPEED_MELEE_BOOSTED;
             this.assignVelocity(SPEED_MELEE_BOOSTED);
+            this.game.sound("sound/melee.wav");
         } else {
             if (recharge < RECHARGE_TIME) {
                 recharge++;

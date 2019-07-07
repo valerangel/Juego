@@ -94,6 +94,9 @@ public class Shotgun extends Player {
         }
         if (shooting && recharge >= RECHARGE_SHOTGUN) {
             recharge = 0;
+            this.game.sound("sound/shotgun.wav");
+            this.game.sound("sound/shotgun.wav");
+            this.game.sound("sound/shotgun.wav");
             for (int j = 0; j < BULLETS_PER_SHOT; j++) {
                 numberShot = bullets.size();
                 for (int i = 0; i < bullets.size(); i++) {
