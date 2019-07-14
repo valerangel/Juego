@@ -48,4 +48,5 @@ Shotgun -> WASD or arrows to move and TFGH or 5123 (Numpad) to direct the burst 
 Thanks to the people that help me develop this:
   - My brother Jesus  (https://github.com/JesusValera)
   - My brother Chema  (https://github.com/Chemaclass)
+  
 Thanks to EGPP for helping me with the images.

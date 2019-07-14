@@ -10,7 +10,7 @@ public class AttackPlanet {
     private static final double ANGULAR_SPEED_ATTACK_MELEE = 0.092;
     private static final int DIAM = 20;
     private static final int DISTANCE = 120;
-    private static final double DAMAGE = 3.1;
+    private static final double DAMAGE = 4.1;
 
     private int a;
     private int b;

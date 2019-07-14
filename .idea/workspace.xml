@@ -6,28 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c39f8791-fe52-48bd-9b67-e2008a145d0d" name="Default" comment="Added music and antonitt images">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c39f8791-fe52-48bd-9b67-e2008a145d0d" name="Default" comment="Added configuration to the Controls. Added some other images too">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/player/AttackPlanet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/AttackPlanet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/player/Bullet_Shotgun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Bullet_Shotgun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/player/PoisonsPoison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/PoisonsPoison.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/player/Shotgun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Shotgun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Planet1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Planet1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Planet2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Planet2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Poison1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Poison1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Poison1Boosted.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Poison1Boosted.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Poison2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Poison2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Poison2Boosted.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Poison2Boosted.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Range1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Range1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Range2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Range2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Shotgun1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Shotgun1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Shotgun2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Shotgun2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/amanita-muscaria-159452_1280.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/poison-1481596_1280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/poison-576608_1280.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/spider-1772769_1280.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,31 +32,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/player/Range.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/player/AttackPlanet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
-              <folding>
-                <element signature="docComment;class#Range#0" />
-                <element signature="method#Range#0;class#Range#0" />
-                <element signature="e#1173#1228#1" />
-                <element signature="method#setImage#0;class#Range#0" />
-                <element signature="method#paintChargeBar#0;class#Range#0" />
-                <element signature="e#3573#3637#1" />
-                <element signature="e#3909#3910#0" expanded="true" />
-                <element signature="e#3953#3954#0" expanded="true" />
-                <element signature="method#keyPressed#0;class#Range#0" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/player/AttackPlanet.java">
+        <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-406">
-              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="170">
+              <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+              <folding>
+                <element signature="e#2365#2366#0" expanded="true" />
+                <element signature="e#2405#2406#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="297" column="47" selection-start-line="297" selection-start-column="47" selection-end-line="297" selection-end-column="47" />
+            <state relative-caret-position="143">
+              <caret line="361" column="5" lean-forward="true" selection-start-line="361" selection-start-column="5" selection-end-line="361" selection-end-column="5" />
               <folding>
                 <element signature="e#1415#1547#0" />
                 <element signature="e#2598#2712#1" />
@@ -123,13 +98,10 @@
                 <element signature="e#4558#4640#1" />
                 <element signature="e#4705#4753#1" />
                 <element signature="e#4759#4845#1" />
-                <element signature="e#5931#6330#1" />
-                <element signature="e#7664#9609#1" />
                 <element signature="e#7873#8269#1" />
-                <element signature="e#9743#10087#1" />
                 <element signature="e#10101#10347#0" />
                 <element signature="e#10353#10668#0" />
-                <element signature="e#11937#11938#0" expanded="true" />
+                <element signature="e#11958#11959#0" expanded="true" />
                 <element signature="e#10763#11384#0" />
                 <element signature="e#10874#10993#1" />
                 <element signature="e#10915#10983#1" />
@@ -173,15 +145,15 @@
                 <element signature="e#13965#14024#1" />
                 <element signature="e#15156#15303#1" />
                 <element signature="e#17333#17415#0" />
-                <element signature="e#18900#18901#0" expanded="true" />
+                <element signature="e#18921#18922#0" expanded="true" />
                 <element signature="e#17459#17545#0" />
-                <element signature="e#19030#19031#0" expanded="true" />
+                <element signature="e#19051#19052#0" expanded="true" />
                 <element signature="e#17589#17675#0" />
-                <element signature="e#19160#19161#0" expanded="true" />
+                <element signature="e#19181#19182#0" expanded="true" />
                 <element signature="e#17720#17808#0" />
-                <element signature="e#19293#19294#0" expanded="true" />
+                <element signature="e#19314#19315#0" expanded="true" />
                 <element signature="e#17852#17938#0" />
-                <element signature="e#19423#19424#0" expanded="true" />
+                <element signature="e#19444#19445#0" expanded="true" />
                 <element signature="e#17944#18074#0" />
                 <element signature="e#18080#18210#0" />
                 <element signature="e#18216#18349#0" />
@@ -233,7 +205,7 @@
         <entry file="file://$PROJECT_DIR$/src/game/StartGame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="27" />
+              <caret line="33" column="27" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -297,6 +269,7 @@
       <find>boosted</find>
       <find>isAtta</find>
       <find>paint</find>
+      <find>pjA</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Ángel\Documents\GitHub\Juego\src</dir>
@@ -346,8 +319,9 @@
         <option value="$PROJECT_DIR$/src/game/player/Shotgun.java" />
         <option value="$PROJECT_DIR$/src/game/player/Bullet_Shotgun.java" />
         <option value="$PROJECT_DIR$/src/game/player/Player.java" />
-        <option value="$PROJECT_DIR$/src/game/player/AttackPlanet.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/game/player/AttackPlanet.java" />
       </list>
     </option>
   </component>
@@ -626,7 +600,7 @@
       <workItem from="1562488402766" duration="21771000" />
       <workItem from="1562613960620" duration="887000" />
       <workItem from="1562781141804" duration="1123000" />
-      <workItem from="1563123167725" duration="3819000" />
+      <workItem from="1563123167725" duration="5018000" />
     </task>
     <task id="LOCAL-00001" summary="Probando esto a ver">
       <created>1529521666950</created>
@@ -789,17 +763,24 @@
       <option name="project" value="LOCAL" />
       <updated>1562521332320</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added configuration to the Controls. Added some other images too">
+      <created>1563127224166</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1563127224166</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164787000" />
+    <option name="totallyTimeSpent" value="165986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14979757" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14979757" />
       <window_info id="Structure" order="1" weight="0.24962178" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -810,7 +791,7 @@
       <window_info anchor="bottom" id="Duplicates" order="0" weight="0.3283582" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49707174" weight="0.328" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49092284" visible="true" weight="0.24046434" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49092284" visible="true" weight="0.24046434" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.6128" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -899,14 +880,14 @@
     <MESSAGE value="Controls updated" />
     <MESSAGE value="Added a menu for selecting players before the game starts." />
     <MESSAGE value="Added music and antonitt images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added music and antonitt images" />
+    <MESSAGE value="Added configuration to the Controls. Added some other images too" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added configuration to the Controls. Added some other images too" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/KeyboardExample.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Racket.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Game2.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Racquet.java" />
@@ -1010,17 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-          <folding>
-            <element signature="e#2365#2366#0" expanded="true" />
-            <element signature="e#2405#2406#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/boost/Boost_Mine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -1109,7 +1079,7 @@
     <entry file="file://$PROJECT_DIR$/src/game/StartGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="27" />
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1154,17 +1124,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/AttackPlanet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-406">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="223">
+            <caret line="50" column="2" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="297" column="47" selection-start-line="297" selection-start-column="47" selection-end-line="297" selection-end-column="47" />
+        <state relative-caret-position="143">
+          <caret line="361" column="5" lean-forward="true" selection-start-line="361" selection-start-column="5" selection-end-line="361" selection-end-column="5" />
           <folding>
             <element signature="e#1415#1547#0" />
             <element signature="e#2598#2712#1" />
@@ -1178,13 +1151,10 @@
             <element signature="e#4558#4640#1" />
             <element signature="e#4705#4753#1" />
             <element signature="e#4759#4845#1" />
-            <element signature="e#5931#6330#1" />
-            <element signature="e#7664#9609#1" />
             <element signature="e#7873#8269#1" />
-            <element signature="e#9743#10087#1" />
             <element signature="e#10101#10347#0" />
             <element signature="e#10353#10668#0" />
-            <element signature="e#11937#11938#0" expanded="true" />
+            <element signature="e#11958#11959#0" expanded="true" />
             <element signature="e#10763#11384#0" />
             <element signature="e#10874#10993#1" />
             <element signature="e#10915#10983#1" />
@@ -1228,15 +1198,15 @@
             <element signature="e#13965#14024#1" />
             <element signature="e#15156#15303#1" />
             <element signature="e#17333#17415#0" />
-            <element signature="e#18900#18901#0" expanded="true" />
+            <element signature="e#18921#18922#0" expanded="true" />
             <element signature="e#17459#17545#0" />
-            <element signature="e#19030#19031#0" expanded="true" />
+            <element signature="e#19051#19052#0" expanded="true" />
             <element signature="e#17589#17675#0" />
-            <element signature="e#19160#19161#0" expanded="true" />
+            <element signature="e#19181#19182#0" expanded="true" />
             <element signature="e#17720#17808#0" />
-            <element signature="e#19293#19294#0" expanded="true" />
+            <element signature="e#19314#19315#0" expanded="true" />
             <element signature="e#17852#17938#0" />
-            <element signature="e#19423#19424#0" expanded="true" />
+            <element signature="e#19444#19445#0" expanded="true" />
             <element signature="e#17944#18074#0" />
             <element signature="e#18080#18210#0" />
             <element signature="e#18216#18349#0" />
@@ -1248,6 +1218,24 @@
             <element signature="e#19084#19448#0" />
             <element signature="e#19532#19580#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding>
+            <element signature="e#2365#2366#0" expanded="true" />
+            <element signature="e#2405#2406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/AttackPlanet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
         </state>
       </provider>
     </entry>

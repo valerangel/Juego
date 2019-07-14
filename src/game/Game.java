@@ -39,7 +39,7 @@ public class Game extends JPanel {
             p2AttackUp, p2AttackDown, p2AttackLeft, p2AttackRight;
 
 
-    private final String[] pJAvailable = {"Planet", "Melee", "Range", "Poison", "Shotgun"};
+    private final String[] pJAvailable = {"Avo G.C.", "Dhiervas Q.", "Pemetint", "Tonin T.T.", "CortinaPls A."};
     private final String[] controls = {"Move UP", "Move Down", "Move Left", "Move Right",
             "Attack UP", "Attack Down", "Attack Left", "Attack Right"};
 
@@ -202,7 +202,7 @@ public class Game extends JPanel {
                 g.fillRect(columns + 5 * columns * (nPlayer - 1), 7 * rows * (2 * i + 3),
                         3 * columns, 7 * rows);
                 g.setColor(Color.WHITE);
-                g.drawString(pJAvailable[i], columns + 5 * columns * (nPlayer - 1) + 100,
+                g.drawString(pJAvailable[i], columns + 5 * columns * (nPlayer - 1) + 80,
                         (int) (7 * rows * (2 * i + 3) + 0.8 * 7 * rows));
             }
 
