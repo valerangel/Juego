@@ -16,7 +16,7 @@ public class Shotgun extends Player {
     private static final int SPEED_SHOTGUN = 5;
     protected static final int DIAMETER_SHOTGUN = 60;
     private static final int RECHARGE_SHOTGUN = 80;
-    private static final int BULLETS_PER_SHOT = 9;
+    private static final int BULLETS_PER_SHOT = 7;
 
     private static final int WIDTH_RECHARGE_BAR = 150;
     private static final int HEIGHT_RECHARGE_BAR = 15;

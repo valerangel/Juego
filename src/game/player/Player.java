@@ -102,7 +102,10 @@ public abstract class Player {
             this.invulnerable = false;
         }
 
-        if (this.health <= 0) game.gameOver(this.enemy.getNumPlayer());
+        if (this.health <= 0) {
+            this.game.repaint();
+            game.gameOver(this.enemy.getNumPlayer());
+        }
     }
 
 

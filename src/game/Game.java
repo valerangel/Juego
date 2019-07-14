@@ -41,7 +41,13 @@ public class Game extends JPanel {
 
     private final String[] pJAvailable = {"Planet", "Melee", "Range", "Poison", "Shotgun"};
     private final String[] controls = {"Move UP", "Move Down", "Move Left", "Move Right",
-                                        "Attack UP","Attack Down", "Attack Left", "Attack Right"};
+            "Attack UP", "Attack Down", "Attack Left", "Attack Right"};
+
+    private boolean listenTypingKey;
+    private int keyChanging;
+    private int numberChangingKey;
+    private int confNumChangingKey;
+
 
     public Game(Player player1, Player player2) {
         this();
@@ -55,14 +61,22 @@ public class Game extends JPanel {
 
         this.music();
 
-        p1MoveUp = KeyEvent.VK_W; p1MoveDown = KeyEvent.VK_S;
-        p1MoveLeft = KeyEvent.VK_A; p1MoveRight = KeyEvent.VK_D;
-        p1AttackUp = KeyEvent.VK_T; p1AttackDown = KeyEvent.VK_G;
-        p1AttackLeft = KeyEvent.VK_F; p1AttackRight = KeyEvent.VK_H;
-        p2MoveUp = KeyEvent.VK_UP; p2MoveDown = KeyEvent.VK_DOWN;
-        p2MoveLeft = KeyEvent.VK_LEFT; p2MoveRight = KeyEvent.VK_RIGHT;
-        p2AttackUp = KeyEvent.VK_O; p2AttackDown = KeyEvent.VK_L;
-        p2AttackLeft = KeyEvent.VK_K; p2AttackRight = 0; //It's the Keycode of Ñ
+        p1MoveUp = KeyEvent.VK_W;
+        p1MoveDown = KeyEvent.VK_S;
+        p1MoveLeft = KeyEvent.VK_A;
+        p1MoveRight = KeyEvent.VK_D;
+        p1AttackUp = KeyEvent.VK_T;
+        p1AttackDown = KeyEvent.VK_G;
+        p1AttackLeft = KeyEvent.VK_F;
+        p1AttackRight = KeyEvent.VK_H;
+        p2MoveUp = KeyEvent.VK_UP;
+        p2MoveDown = KeyEvent.VK_DOWN;
+        p2MoveLeft = KeyEvent.VK_LEFT;
+        p2MoveRight = KeyEvent.VK_RIGHT;
+        p2AttackUp = KeyEvent.VK_O;
+        p2AttackDown = KeyEvent.VK_L;
+        p2AttackLeft = KeyEvent.VK_K;
+        p2AttackRight = 0; //It's the Keycode of Ñ
 
         addKeyListener(new KeyListener() {
             @Override
@@ -71,23 +85,29 @@ public class Game extends JPanel {
 
             @Override
             public void keyReleased(KeyEvent e) {
-                if (player1Keys(e)) {
-                    if (statusGame == StatusGame.ACTIVE) {
-                        player1.keyReleased(e);
+                if (listenTypingKey == false) {
+                    if (player1Keys(e)) {
+                        if (statusGame == StatusGame.ACTIVE) {
+                            player1.keyReleased(e);
+                        }
+                        if (statusGame == StatusGame.MENU_SELECTION) {
+                            changeSelectMenu(PlayerNumber.getNumber(PlayerNumber.PLAYER1), e);
+                        }
                     }
-                    if (statusGame == StatusGame.MENU_SELECTION) {
-                        changeSelectMenu(PlayerNumber.getNumber(PlayerNumber.PLAYER1), e);
+                    if (player2Keys(e)) {
+                        if (statusGame == StatusGame.ACTIVE) {
+                            player2.keyReleased(e);
+                        }
+                        if (statusGame == StatusGame.MENU_SELECTION) {
+                            changeSelectMenu(PlayerNumber.getNumber(PlayerNumber.PLAYER2), e);
+                        }
                     }
+                } else {
+                    listenTypingKey = false;
+                    System.out.println(e.getExtendedKeyCode());
+                    keyChanging = e.getExtendedKeyCode();
+                    changeKey();
                 }
-                if (player2Keys(e)) {
-                    if (statusGame == StatusGame.ACTIVE) {
-                        player2.keyReleased(e);
-                    }
-                    if (statusGame == StatusGame.MENU_SELECTION) {
-                        changeSelectMenu(PlayerNumber.getNumber(PlayerNumber.PLAYER2), e);
-                    }
-                }
-
             }
 
             @Override
@@ -100,9 +120,12 @@ public class Game extends JPanel {
                     if (statusGame == StatusGame.ACTIVE)
                         player2.keyPressed(e);
                 }
+
             }
         });
+
         setFocusable(true);
+
     }
 
     private boolean player1Keys(KeyEvent e) {
@@ -113,7 +136,7 @@ public class Game extends JPanel {
     }
 
     private boolean player2Keys(KeyEvent e) {
-        return  e.getKeyCode() == p2MoveUp || e.getKeyCode() == p2MoveDown ||
+        return e.getKeyCode() == p2MoveUp || e.getKeyCode() == p2MoveDown ||
                 e.getKeyCode() == p2MoveLeft || e.getKeyCode() == p2MoveRight ||
                 e.getKeyCode() == p2AttackUp || e.getKeyCode() == p2AttackDown ||
                 e.getKeyCode() == p2AttackLeft || e.getKeyCode() == p2AttackRight;
@@ -151,6 +174,9 @@ public class Game extends JPanel {
         if (this.statusGame == StatusGame.MENU_SELECTION) {
             paintMenu(g2d, PlayerNumber.getNumber(PlayerNumber.PLAYER1));
             paintMenu(g2d, PlayerNumber.getNumber(PlayerNumber.PLAYER2));
+            if(listenTypingKey == true){
+                this.paintListeningKey(g2d);
+            }
         } else {
             player1.paint(g2d);
             player2.paint(g2d);
@@ -163,13 +189,11 @@ public class Game extends JPanel {
         int columns = WIDTH / 10;
 
 
-
-
         boolean conf;
-        if(nPlayer == 1) conf = configuration1;
+        if (nPlayer == 1) conf = configuration1;
         else conf = configuration2;
 
-        if(!conf) {
+        if (!conf) {
             Font font = new Font("Serif", Font.PLAIN, 32);
             g.setFont(font);
             //this for draws rectangles with the different classes for each pj
@@ -209,7 +233,7 @@ public class Game extends JPanel {
                     (int) (7 * rows * (13) + 0.8 * 7 * rows));
 
 
-        } else{
+        } else {
             Font font = new Font("Serif", Font.PLAIN, 24);
             g.setFont(font);
             //this for draws rectangles with the different classes for each pj
@@ -238,7 +262,7 @@ public class Game extends JPanel {
 
             g.drawRect(columns + 5 * columns * (nPlayer - 1),
                     5 * rows * (2 * confNum1 * (2 - nPlayer) + 2 * confNum2 * (nPlayer - 1) + 3),
-                    3 * columns, 5* rows);
+                    3 * columns, 5 * rows);
 
             //We draw the option button.
             g.setColor(Color.YELLOW);
@@ -247,7 +271,7 @@ public class Game extends JPanel {
             g.setColor(Color.BLACK);
             g.drawString("Return to selection", columns + 5 * columns * (nPlayer - 1) + 60,
                     (int) (5 * rows * (19) + 0.8 * 5 * rows));
-            }
+        }
 
         //If both select a player, we begin
         if ((select1Done && (2 - nPlayer) == 1) || (select2Done && (nPlayer - 1) == 1)) {
@@ -258,8 +282,20 @@ public class Game extends JPanel {
                     7 * rows * (2 * select1 * (2 - nPlayer) + 2 * select2 * (nPlayer - 1) + 3),
                     3 * columns, 7 * rows);
         }
+    }
 
+    private void paintListeningKey(Graphics2D g){
+        Font font = new Font("Serif", Font.PLAIN, 52);
+        g.setFont(font);
 
+        g.setColor(Color.BLACK);
+        g.fillRect((int) (0.25 * WIDTH), (int) (0.25*HEIGHT),
+                (int) (0.5 * WIDTH), (int) (0.5*HEIGHT));
+        g.setColor(Color.red);
+        g.drawRect((int) (0.25 * WIDTH), (int) (0.25*HEIGHT),
+                (int) (0.5 * WIDTH), (int) (0.5*HEIGHT));
+        g.setColor(Color.WHITE);
+        g.drawString("Type a Key!",(int) (0.385 * WIDTH), (int) (0.5*HEIGHT));
     }
 
     private void paintBackground(Graphics2D g2d) {
@@ -347,21 +383,21 @@ public class Game extends JPanel {
     private void changeSelectMenu(int number, KeyEvent e) {
         if (this.isMoveUp(e)) {
             if (number == PlayerNumber.getNumber(PlayerNumber.PLAYER1)) {
-                if(!configuration1) {
+                if (!configuration1) {
                     if (select1 > 0 && !select1Done) {
                         select1--;
                     }
-                } else{
+                } else {
                     if (confNum1 > 0) {
                         confNum1--;
                     }
                 }
             } else {
-                if(!configuration2) {
+                if (!configuration2) {
                     if (select2 > 0 && !select2Done) {
                         select2--;
                     }
-                } else{
+                } else {
                     if (confNum2 > 0) {
                         confNum2--;
                     }
@@ -371,22 +407,22 @@ public class Game extends JPanel {
 
         if (isMoveDown(e)) {
             if (number == PlayerNumber.getNumber(PlayerNumber.PLAYER1)) {
-                if(!configuration1) {
+                if (!configuration1) {
                     if (select1 < 5 && !select1Done) {
                         select1++;
                     }
-                } else{
-                    if(confNum1 < 8){
+                } else {
+                    if (confNum1 < 8) {
                         confNum1++;
                     }
                 }
             } else {
-                if(!configuration2) {
+                if (!configuration2) {
                     if (select2 < 5 && !select2Done) {
                         select2++;
                     }
-                } else{
-                    if(confNum2 < 8){
+                } else {
+                    if (confNum2 < 8) {
                         confNum2++;
                     }
                 }
@@ -395,27 +431,27 @@ public class Game extends JPanel {
 
         if (isAttackUp(e)) {
             if (number == PlayerNumber.getNumber(PlayerNumber.PLAYER1)) {
-                if(!configuration1){
-                    if(select1 < 5) {
+                if (!configuration1) {
+                    if (select1 < 5) {
                         select1Done = true;
-                    }else{
+                    } else {
                         configuration1 = true;
                     }
-                } else{
-                    if(confNum1 < 8) {
+                } else {
+                    if (confNum1 < 8) {
                         configureKey(number, confNum1);
-                    }else{
+                    } else {
                         configuration1 = false;
                     }
                 }
             } else {
-                if(!configuration2) {
+                if (!configuration2) {
                     if (select2 < 5) {
                         select2Done = true;
                     } else {
                         configuration2 = true;
                     }
-                } else{
+                } else {
                     if (confNum2 < 8) {
                         configureKey(number, confNum2);
                     } else {
@@ -433,7 +469,7 @@ public class Game extends JPanel {
 
     }
 
-    private void resetGame(){
+    private void resetGame() {
         this.statusGame = StatusGame.MENU_SELECTION;
         this.boosts = new ArrayList<>(0);
         this.numBoost = 0;
@@ -448,88 +484,90 @@ public class Game extends JPanel {
         configuration1 = false;
         configuration2 = false;
 
+        listenTypingKey = false;
+        keyChanging = 0;
+        numberChangingKey = 0;
+        confNumChangingKey = 0;
+
     }
 
-    private void configureKey (int number, int confNum){
-        String text;
-        do {
-            text = JOptionPane.showInputDialog("Type the letter");
-        } while(text.isEmpty());
-        System.out.println(text);
-        char letter = text.charAt(0);
-        System.out.println(letter);
-        int key = KeyEvent.getExtendedKeyCodeForChar(letter);
-        System.out.println(key);
+    private void configureKey(int number, int confNum) {
+        this.numberChangingKey = number;
+        this.confNumChangingKey = confNum;
+        this.listenTypingKey = true;
 
-        if(number == 1){
-            if(confNum == 0){
-                p1MoveUp = key;
-            } else if(confNum == 1){
-                p1MoveDown = key;
-            }else if(confNum == 2){
-                p1MoveLeft = key;
-            }else if(confNum == 3){
-                p1MoveRight = key;
-            }else if(confNum == 4){
-                p1AttackUp = key;
-            }else if(confNum == 5){
-                p1AttackDown = key;
-            }else if(confNum == 6){
-                p1AttackLeft = key;
-            }else{
-                p1AttackRight = key;
+    }
+
+    private void changeKey(){
+        if (numberChangingKey == 1) {
+            if (confNumChangingKey == 0) {
+                p1MoveUp = keyChanging;
+            } else if (confNumChangingKey == 1) {
+                p1MoveDown = keyChanging;
+            } else if (confNumChangingKey == 2) {
+                p1MoveLeft = keyChanging;
+            } else if (confNumChangingKey == 3) {
+                p1MoveRight = keyChanging;
+            } else if (confNumChangingKey == 4) {
+                p1AttackUp = keyChanging;
+            } else if (confNumChangingKey == 5) {
+                p1AttackDown = keyChanging;
+            } else if (confNumChangingKey == 6) {
+                p1AttackLeft = keyChanging;
+            } else {
+                p1AttackRight = keyChanging;
             }
-        } else{
-            if(confNum == 0){
-                p2MoveUp = key;
-            } else if(confNum == 1){
-                p2MoveDown = key;
-            }else if(confNum == 2){
-                p2MoveLeft = key;
-            }else if(confNum == 3){
-                p2MoveRight = key;
-            }else if(confNum == 4){
-                p2AttackUp = key;
-            }else if(confNum == 5){
-                p2AttackDown = key;
-            }else if(confNum == 6){
-                p2AttackLeft = key;
-            }else{
-                p2AttackRight = key;
+        } else {
+            if (confNumChangingKey == 0) {
+                p2MoveUp = keyChanging;
+            } else if (confNumChangingKey == 1) {
+                p2MoveDown = keyChanging;
+            } else if (confNumChangingKey == 2) {
+                p2MoveLeft = keyChanging;
+            } else if (confNumChangingKey == 3) {
+                p2MoveRight = keyChanging;
+            } else if (confNumChangingKey == 4) {
+                p2AttackUp = keyChanging;
+            } else if (confNumChangingKey == 5) {
+                p2AttackDown = keyChanging;
+            } else if (confNumChangingKey == 6) {
+                p2AttackLeft = keyChanging;
+            } else {
+                p2AttackRight = keyChanging;
             }
 
         }
     }
 
-    public boolean isMoveUp( KeyEvent e){
+    public boolean isMoveUp(KeyEvent e) {
         return (e.getKeyCode() == p1MoveUp || e.getKeyCode() == p2MoveUp);
     }
 
-    public boolean isMoveDown( KeyEvent e){
+    public boolean isMoveDown(KeyEvent e) {
         return (e.getKeyCode() == p1MoveDown || e.getKeyCode() == p2MoveDown);
     }
 
-    public boolean isMoveLeft( KeyEvent e){
+    public boolean isMoveLeft(KeyEvent e) {
         return (e.getKeyCode() == p1MoveLeft || e.getKeyCode() == p2MoveLeft);
     }
 
-    public boolean isMoveRight( KeyEvent e){
+    public boolean isMoveRight(KeyEvent e) {
         return (e.getKeyCode() == p1MoveRight || e.getKeyCode() == p2MoveRight);
     }
 
-    public boolean isAttackUp( KeyEvent e){
+    public boolean isAttackUp(KeyEvent e) {
         return (e.getKeyCode() == p1AttackUp || e.getKeyCode() == p2AttackUp);
     }
 
-    public boolean isAttackDown( KeyEvent e){
+    public boolean isAttackDown(KeyEvent e) {
         return (e.getKeyCode() == p1AttackDown || e.getKeyCode() == p2AttackDown);
     }
 
-    public boolean isAttackLeft( KeyEvent e){
+    public boolean isAttackLeft(KeyEvent e) {
         return (e.getKeyCode() == p1AttackLeft || e.getKeyCode() == p2AttackLeft);
     }
 
-    public boolean isAttackRight( KeyEvent e){
+    public boolean isAttackRight(KeyEvent e) {
         return (e.getKeyCode() == p1AttackRight || e.getKeyCode() == p2AttackRight);
     }
 
@@ -564,7 +602,6 @@ public class Game extends JPanel {
             System.out.println(uae);
         }
     }
-
 
 
 }

@@ -10,7 +10,7 @@ import java.awt.*;
  */
 public class Bullet_Shotgun {
 
-    private static final double DAMAGE_BULLET_SHOTGUN = 5;
+    private static final double DAMAGE_BULLET_SHOTGUN = 6;
     private static final double SPEED_BULLET_SHOTGUN = 11;
     private static final int DIAMETER_BULLET_SHOTGUN = (int) (Shotgun.DIAMETER_SHOTGUN / 5);
     private static final int TIME_BULLET = 25;

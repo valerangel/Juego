@@ -7,30 +7,30 @@ import java.awt.*;
  */
 public class AttackPlanet {
 
-    private static final double ANGULAR_SPEED_ATTACK_MELEE = 0.062;
-    private static final int DIAM = 27;
-    private static final int DISTANCE = 100;
-    private static final double DAMAGE = 4.1;
+    private static final double ANGULAR_SPEED_ATTACK_MELEE = 0.092;
+    private static final int DIAM = 20;
+    private static final int DISTANCE = 120;
+    private static final double DAMAGE = 3.1;
 
     private int a;
     private int b;
-    private double angulo;
+    private double angle;
     private Player enemy;
 
     private Planet planet;
 
     public AttackPlanet(Planet planet) {
         this.planet = planet;
-        this.angulo = 0;
+        this.angle = 0;
     }
 
     public void move() {
-        a = (int) (this.planet.getX() + (this.planet.getDiameter() - this.DIAM) / 2 + DISTANCE * Math.cos(angulo));
-        b = (int) (this.planet.getY() + (this.planet.getDiameter() - this.DIAM) / 2 + DISTANCE * Math.sin(angulo));
+        a = (int) (this.planet.getX() + (this.planet.getDiameter() - this.DIAM) / 2 + DISTANCE * Math.cos(angle));
+        b = (int) (this.planet.getY() + (this.planet.getDiameter() - this.DIAM) / 2 + DISTANCE * Math.sin(angle));
         if (planet.getNumPlayer() == PlayerNumber.PLAYER1) {
-            angulo = angulo + ANGULAR_SPEED_ATTACK_MELEE;
+            angle = angle + ANGULAR_SPEED_ATTACK_MELEE;
         } else {
-            angulo = angulo - ANGULAR_SPEED_ATTACK_MELEE;
+            angle = angle - ANGULAR_SPEED_ATTACK_MELEE;
         }
         if (collision()) {
             enemy.dealDamage(this.DAMAGE);
