@@ -1,6 +1,6 @@
 Planet	-	WASD or arrows to move.
-Melee	-	WASD or arrows to move and T or 5 (numpad) to boost yourself.
-Range	-	WASD or arrows to move and TFGH or 5123 (numpad) to direct the shoots.
-Poison	-	WASD or arrows to move and T or 5 (numpad) to be inmune.
-Shotgun	-	WASD or arrows to move and TFGH or 5123 (numpad) to direct the burst of bullets.
+Melee	-	WASD or arrows to move and T or O to boost yourself.
+Range	-	WASD or arrows to move and TFGH or OKLÑ to direct the shoots.
+Poison	-	WASD or arrows to move and T or O to be inmune.
+Shotgun	-	WASD or arrows to move and TFGH or OKLÑ to direct the burst of bullets.
 	
