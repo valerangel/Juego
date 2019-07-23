@@ -103,10 +103,11 @@ public class Game extends JPanel {
                         }
                     }
                 } else {
-                    listenTypingKey = false;
-                    System.out.println(e.getExtendedKeyCode());
-                    keyChanging = e.getExtendedKeyCode();
-                    changeKey();
+                    if(!keyUsed(e)) {
+                        listenTypingKey = false;
+                        keyChanging = e.getExtendedKeyCode();
+                        changeKey();
+                    }
                 }
             }
 
@@ -172,12 +173,14 @@ public class Game extends JPanel {
         this.paintBackground(g2d);
 
         if (this.statusGame == StatusGame.MENU_SELECTION) {
+            this.paintBackgroundMenu(g2d);
             paintMenu(g2d, PlayerNumber.getNumber(PlayerNumber.PLAYER1));
             paintMenu(g2d, PlayerNumber.getNumber(PlayerNumber.PLAYER2));
             if(listenTypingKey == true){
                 this.paintListeningKey(g2d);
             }
         } else {
+            this.paintBackground(g2d);
             player1.paint(g2d);
             player2.paint(g2d);
             this.paintBoosts(g2d);
@@ -303,6 +306,12 @@ public class Game extends JPanel {
         Image image = img.getImage();
         g2d.drawImage(image, 0, 0, WIDTH, HEIGHT, this);
     }
+    private void paintBackgroundMenu(Graphics2D g2d) {
+        ImageIcon img = new javax.swing.ImageIcon(getClass().getResource("/icon/BackgroundMenu.png"));
+        Image image = img.getImage();
+        g2d.drawImage(image, 0, 0, WIDTH, HEIGHT, this);
+    }
+
 
     public void gameOver(PlayerNumber winner) {
         this.sound("sound/gameOver.wav");
@@ -537,6 +546,14 @@ public class Game extends JPanel {
             }
 
         }
+    }
+
+    private boolean keyUsed(KeyEvent e){
+
+        return (e.getExtendedKeyCode() == this.p1AttackDown) || (e.getExtendedKeyCode() == this.p1AttackUp) ||
+                (e.getExtendedKeyCode() == this.p1AttackLeft) || (e.getExtendedKeyCode() == this.p1AttackRight) ||
+                (e.getExtendedKeyCode() == this.p2AttackDown) || (e.getExtendedKeyCode() == this.p2AttackUp) ||
+                (e.getExtendedKeyCode() == this.p2AttackLeft) || (e.getExtendedKeyCode() == this.p2AttackRight);
     }
 
     public boolean isMoveUp(KeyEvent e) {
