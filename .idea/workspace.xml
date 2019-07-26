@@ -8,12 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c39f8791-fe52-48bd-9b67-e2008a145d0d" name="Default" comment="Added configuration to the Controls. Added some other images too">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Melee1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Melee1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Melee1Boosted.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Melee1Boosted.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Melee2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Melee2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon/Melee2Boosted.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Melee2Boosted.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/player/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Planet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/player/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Range.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/player/Shoot_Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/player/Shoot_Range.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icon/Heal.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Heal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icon/Shoot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon/Shoot.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+            <state relative-caret-position="187">
+              <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
               <folding>
                 <element signature="e#2365#2366#0" expanded="true" />
                 <element signature="e#2405#2406#0" expanded="true" />
@@ -49,19 +48,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/player/Shotgun.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/player/Range.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+            <state relative-caret-position="187">
+              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
               <folding>
-                <element signature="docComment;class#Shotgun#0" />
-                <element signature="method#Shotgun#0;class#Shotgun#0" />
-                <element signature="e#1560#1663#1" />
-                <element signature="method#setImage#0;class#Shotgun#0" />
-                <element signature="method#paintChargeBar#0;class#Shotgun#0" />
-                <element signature="method#keyPressed#0;class#Shotgun#0" />
+                <element signature="docComment;class#Range#0" />
+                <element signature="method#Range#0;class#Range#0" />
+                <element signature="e#1173#1228#1" />
+                <element signature="method#setImage#0;class#Range#0" />
+                <element signature="method#paintChargeBar#0;class#Range#0" />
+                <element signature="e#3573#3637#1" />
+                <element signature="e#3909#3910#0" expanded="true" />
+                <element signature="e#3953#3954#0" expanded="true" />
+                <element signature="method#keyPressed#0;class#Range#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/player/Shoot_Range.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -75,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
+            <state relative-caret-position="-2271">
               <caret line="309" column="94" selection-start-line="309" selection-start-column="94" selection-end-line="309" selection-end-column="94" />
               <folding>
                 <element signature="e#1548#1680#0" />
@@ -213,6 +224,7 @@
       <find>paint</find>
       <find>pjA</find>
       <find>System.out</find>
+      <find>pai</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Ángel\Documents\GitHub\Juego\src</dir>
@@ -247,16 +259,13 @@
         <option value="$PROJECT_DIR$/src/game/Melee.java" />
         <option value="$PROJECT_DIR$/src/game/boost/Boost.java" />
         <option value="$PROJECT_DIR$/src/game/player/Number_of_player.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Shoot_Range.java" />
         <option value="$PROJECT_DIR$/src/game/StatusGame.java" />
         <option value="$PROJECT_DIR$/src/game/Main.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/game/player/Planet.java" />
         <option value="$PROJECT_DIR$/src/game/StartGame.java" />
         <option value="$PROJECT_DIR$/src/game/boost/Boost_Heal.java" />
         <option value="$PROJECT_DIR$/src/game/boost/Boost_Mine.java" />
         <option value="$PROJECT_DIR$/src/game/player/Melee.java" />
-        <option value="$PROJECT_DIR$/src/game/player/Range.java" />
         <option value="$PROJECT_DIR$/src/game/player/Poison.java" />
         <option value="$PROJECT_DIR$/src/game/player/PoisonsPoison.java" />
         <option value="$PROJECT_DIR$/src/game/player/Shotgun.java" />
@@ -265,6 +274,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/game/player/AttackPlanet.java" />
         <option value="$PROJECT_DIR$/src/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Planet.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Shoot_Range.java" />
+        <option value="$PROJECT_DIR$/src/game/player/Range.java" />
       </list>
     </option>
   </component>
@@ -304,6 +316,13 @@
               <item name="Juego" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Juego" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Juego" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -531,7 +550,7 @@
       <workItem from="1562781141804" duration="1123000" />
       <workItem from="1563123167725" duration="5204000" />
       <workItem from="1563385618229" duration="621000" />
-      <workItem from="1563879728532" duration="859000" />
+      <workItem from="1563879728532" duration="2718000" />
     </task>
     <task id="LOCAL-00001" summary="Probando esto a ver">
       <created>1529521666950</created>
@@ -708,15 +727,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563128351544</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added configuration to the Controls. Added some other images too">
+      <created>1563880674420</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1563880674420</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167652000" />
+    <option name="totallyTimeSpent" value="169511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15465587" />
       <window_info id="Structure" order="1" weight="0.24962178" />
@@ -729,7 +754,7 @@
       <window_info anchor="bottom" id="Duplicates" order="0" weight="0.3283582" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49707174" weight="0.328" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49092284" visible="true" weight="0.24046434" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49092284" weight="0.24046434" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.6128" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -869,13 +894,6 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Component.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Rectangle.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/ImageIcon.java" />
-    <entry file="file://$PROJECT_DIR$/src/game/player/Shoot_Range.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Menu.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/javax/swing/JComponent.java" />
     <entry file="file://$PROJECT_DIR$/src/game/player/PlayerNumber.java">
@@ -941,24 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Range.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
-          <folding>
-            <element signature="docComment;class#Range#0" />
-            <element signature="method#Range#0;class#Range#0" />
-            <element signature="e#1173#1228#1" />
-            <element signature="method#setImage#0;class#Range#0" />
-            <element signature="method#paintChargeBar#0;class#Range#0" />
-            <element signature="e#3573#3637#1" />
-            <element signature="e#3909#3910#0" expanded="true" />
-            <element signature="e#3953#3954#0" expanded="true" />
-            <element signature="method#keyPressed#0;class#Range#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/javax/swing/JComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -990,17 +990,6 @@
           <folding>
             <element signature="e#62673#62674#0" expanded="true" />
             <element signature="e#62716#62717#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-          <folding>
-            <element signature="e#2365#2366#0" expanded="true" />
-            <element signature="e#2405#2406#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1103,7 +1092,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="-2271">
           <caret line="309" column="94" selection-start-line="309" selection-start-column="94" selection-end-line="309" selection-end-column="94" />
           <folding>
             <element signature="e#1548#1680#0" />
@@ -1124,6 +1113,42 @@
             <element signature="e#19822#19823#0" expanded="true" />
             <element signature="e#19867#19868#0" expanded="true" />
             <element signature="e#19952#19953#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding>
+            <element signature="e#2365#2366#0" expanded="true" />
+            <element signature="e#2405#2406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Shoot_Range.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/player/Range.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding>
+            <element signature="docComment;class#Range#0" />
+            <element signature="method#Range#0;class#Range#0" />
+            <element signature="e#1173#1228#1" />
+            <element signature="method#setImage#0;class#Range#0" />
+            <element signature="method#paintChargeBar#0;class#Range#0" />
+            <element signature="e#3573#3637#1" />
+            <element signature="e#3909#3910#0" expanded="true" />
+            <element signature="e#3953#3954#0" expanded="true" />
+            <element signature="method#keyPressed#0;class#Range#0" />
           </folding>
         </state>
       </provider>

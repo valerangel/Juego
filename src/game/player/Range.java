@@ -15,7 +15,7 @@ public class Range extends Player {
     private static final double DAMAGE_RANGE = Shoot_Range.getDamage();
     private static final int SPEED_RANGE = 7;
     protected static final int DIAMETER_RANGE = 60;
-    private static final int RECHARGE_TIME = 20;
+    private static final int RECHARGE_TIME = 25;
 
     private static final int WIDTH_RECHARGE_BAR = 150;
     private static final int HEIGHT_RECHARGE_BAR = 15;

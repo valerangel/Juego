@@ -12,8 +12,8 @@ import java.awt.*;
 public class Shoot_Range {
 
     private static final int DAMAGE_SHOT_RANGE = 5;
-    private static final int SPEED_SHOT_RANGE = 9;
-    private static final int DIAMETER_SHOT_RANGE = (Range.DIAMETER_RANGE / 3);
+    private static final int SPEED_SHOT_RANGE = 7;
+    private static final int DIAMETER_SHOT_RANGE = (int)(Range.DIAMETER_RANGE / 2.5);
 
     private double x;
     private double y;

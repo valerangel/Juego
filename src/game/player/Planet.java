@@ -11,7 +11,7 @@ import java.awt.*;
 public class Planet extends Player {
     private static final double HEALTH_PLANET = 150;
     private static final double DAMAGE_PLANET = AttackPlanet.getDamage();
-    private static final int SPEED_PLANET = 5;
+    private static final int SPEED_PLANET = 6;
     private static final int DIAMETER_PLANET = 60;
 
     private AttackPlanet attackPlanet;
